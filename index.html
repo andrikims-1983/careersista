@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karier di SISTA Group — Grow Career With Us</title>
+<meta name="description" content="Bangun masa depanmu bersama SISTA Group — importir & brand aksesoris lifestyle wanita dari Solo, dengan visi menjadi Super Brand Lifestyle Aksesoris No. 1 di Indonesia 2030.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6F2EC; --paper-2:#EEE8DF; --white:#FFFFFF;
+  --ink:#151312; --ink-2:#3A3633; --muted:#6F6862; --line:rgba(21,19,18,.12);
+  --red:#E1251B; --red-deep:#B3140F; --red-soft:#FBE3E0; --sun:#FFD21F;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --serif:"Instrument Serif",Georgia,serif;
+  --sans:"Plus Jakarta Sans",system-ui,sans-serif;
+  --wrap:1280px; --pad:clamp(20px,5vw,56px); --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+.eyebrow{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--red);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:2px;background:currentColor}
+.h-xl{font-family:var(--display);font-weight:800;letter-spacing:-.035em;line-height:.92}
+.h-l{font-family:var(--display);font-weight:800;font-size:clamp(34px,5.4vw,68px);letter-spacing:-.03em;line-height:1}
+.h-m{font-family:var(--display);font-weight:700;font-size:clamp(22px,2.4vw,30px);letter-spacing:-.02em;line-height:1.15}
+.it{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em}
+.lead{font-size:clamp(17px,1.5vw,20px);color:var(--ink-2);max-width:62ch}
+.muted{color:var(--muted)}
+section{position:relative}
+.sec{padding:clamp(80px,11vw,150px) 0}
+.sec-head{display:grid;grid-template-columns:1fr;gap:20px;margin-bottom:clamp(40px,6vw,72px)}
+@media(min-width:900px){.sec-head.split{grid-template-columns:1.1fr .9fr;align-items:end;gap:64px}}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 24px;border-radius:999px;font-weight:700;font-size:15px;transition:transform .25s,background .25s,color .25s,box-shadow .25s;white-space:nowrap}
+.btn svg{width:18px;height:18px;transition:transform .25s}
+.btn:hover svg{transform:translateX(3px)}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 30px -12px rgba(225,37,27,.7)}
+.btn-red:hover{background:var(--red-deep)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{background:#000}
+.btn-ghost{border:1.5px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.btn-white{background:#fff;color:var(--ink)}
+.btn-white:hover{background:var(--sun)}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:6px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}.rv.d4{transition-delay:.32s}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.marquee-track{animation:none!important}}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s,backdrop-filter .3s}
+.nav.solid{background:rgba(246,242,236,.86);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);box-shadow:0 1px 0 var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:800;font-size:20px;letter-spacing:-.02em}
+.brand img{width:36px;height:36px}
+.brand small{font-family:var(--sans);font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-left:2px}
+.nav-links{display:none;gap:4px}
+.nav-links a{font-size:14px;font-weight:600;padding:8px 12px;border-radius:999px;color:var(--ink-2);transition:background .2s,color .2s}
+.nav-links a:hover{background:rgba(21,19,18,.06)}
+.nav-links a.active{color:var(--red)}
+.nav-r{display:flex;align-items:center;gap:10px}
+.lang{display:inline-flex;border:1.5px solid var(--line);border-radius:999px;padding:3px;font-size:12px;font-weight:700}
+.lang button{padding:6px 10px;border-radius:999px;letter-spacing:.06em;color:var(--muted)}
+.lang button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.nav .btn{padding:11px 18px;font-size:14px;display:none}
+.burger{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:#fff}
+.burger span{display:block;width:18px;height:2px;background:#fff;position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:#fff;transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mobile-menu{position:fixed;inset:0;z-index:45;background:var(--ink);color:#fff;padding:100px var(--pad) 40px;display:flex;flex-direction:column;gap:6px;transform:translateY(-100%);transition:transform .5s cubic-bezier(.7,0,.2,1);overflow:auto}
+.menu-open .mobile-menu{transform:none}
+.mobile-menu a{font-family:var(--display);font-weight:700;font-size:clamp(28px,8vw,44px);letter-spacing:-.02em;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.mobile-menu a span{font-family:var(--sans);font-size:12px;color:var(--red);margin-right:12px;vertical-align:middle;font-weight:700}
+.mobile-menu .btn{margin-top:28px;align-self:flex-start}
+.menu-open .nav{background:transparent;box-shadow:none;backdrop-filter:none}
+.menu-open .nav .brand,.menu-open .nav .lang{color:#fff}
+.menu-open .lang{border-color:rgba(255,255,255,.25)}
+.menu-open .lang button[aria-pressed="true"]{background:#fff;color:var(--ink)}
+@media(min-width:1120px){.nav-links{display:flex}.burger{display:none}.nav .btn{display:inline-flex}}
+@media(min-width:640px){.nav .btn{display:inline-flex}}
+@media(max-width:420px){.brand small{display:none}}
+
+/* HERO */
+.hero{padding:120px 0 0;min-height:100svh;display:flex;flex-direction:column;overflow:hidden}
+.hero-grid{display:grid;gap:40px;align-items:center;flex:1}
+@media(min-width:980px){.hero-grid{grid-template-columns:1.12fr .88fr;gap:56px}}
+.hero-kicker{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:28px}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:13px;font-weight:600}
+.pill .dot{width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 0 0 rgba(225,37,27,.5);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(225,37,27,.45)}70%{box-shadow:0 0 0 10px rgba(225,37,27,0)}100%{box-shadow:0 0 0 0 rgba(225,37,27,0)}}
+.hero h1{font-size:clamp(54px,9vw,138px);margin-bottom:28px}
+.hero h1 .ln{white-space:nowrap}
+.hero h1 .ln{display:block;overflow:hidden}
+.hero h1 .ln>span{display:inline-block;transform:translateY(105%);animation:up 1.1s cubic-bezier(.2,.8,.2,1) forwards}
+.hero h1 .ln:nth-child(2)>span{animation-delay:.1s}
+.hero h1 .ln:nth-child(3)>span{animation-delay:.2s}
+@keyframes up{to{transform:none}}
+.hero h1 .red{color:var(--red)}
+.hero-sub{font-family:var(--serif);font-style:italic;font-size:clamp(26px,3vw,40px);line-height:1.1;letter-spacing:-.01em;margin-bottom:18px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero-media{position:relative;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:12px}
+.hero-media figure{position:relative;border-radius:var(--r);overflow:hidden;background:var(--paper-2)}
+.hero-media img{width:100%;height:100%;object-fit:cover}
+.hero-media .f1{grid-column:1/3;aspect-ratio:16/9}
+.hero-media .f2{aspect-ratio:1/1}
+.hero-media .f3{aspect-ratio:1/1}
+.hero-media figcaption{position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,.92);backdrop-filter:blur(6px);padding:6px 12px;border-radius:999px;font-size:12px;font-weight:600}
+.hero-badge{position:absolute;right:-6px;top:-26px;width:122px;height:122px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;text-align:center;font-family:var(--display);font-weight:800;font-size:14px;line-height:1.05;letter-spacing:.02em;transform:rotate(-10deg);box-shadow:0 20px 40px -18px rgba(179,20,15,.8);z-index:2}
+.hero-badge b{display:block;font-size:30px;letter-spacing:-.03em}
+.marquee{margin-top:clamp(48px,7vw,80px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;background:var(--paper)}
+.marquee-track{display:flex;gap:48px;width:max-content;padding:18px 0;animation:mq 38s linear infinite}
+.marquee-track span{font-family:var(--display);font-weight:700;font-size:clamp(18px,2vw,24px);letter-spacing:-.01em;display:inline-flex;align-items:center;gap:48px;white-space:nowrap}
+.marquee-track span::after{content:"✦";color:var(--red);font-size:.8em}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ABOUT */
+.about-intro{display:grid;gap:40px}
+@media(min-width:980px){.about-intro{grid-template-columns:1fr 1fr;gap:80px;align-items:start}}
+.big-quote{font-family:var(--display);font-weight:700;font-size:clamp(28px,3.4vw,46px);line-height:1.1;letter-spacing:-.025em}
+.big-quote em{font-family:var(--serif);font-weight:400;color:var(--red)}
+.about-copy p+p{margin-top:18px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);margin-top:clamp(56px,8vw,96px)}
+@media(min-width:760px){.stats{grid-template-columns:repeat(3,1fr)}}
+.stat{padding:26px 18px 26px 0;border-bottom:1px solid var(--line)}
+.stat b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(36px,6vw,84px);letter-spacing:-.04em;line-height:1}
+.stat span{display:block;font-size:13px;color:var(--muted);margin-top:8px;max-width:20ch;line-height:1.4}
+
+.timeline{margin-top:clamp(72px,9vw,120px)}
+.tl-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px;flex-wrap:wrap}
+.tl-ctrl{display:flex;gap:8px}
+.tl-ctrl button{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center;transition:background .2s,color .2s}
+.tl-ctrl button:hover{background:var(--ink);color:#fff}
+.tl-ctrl svg{width:18px;height:18px}
+.tl-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;scrollbar-width:none;margin:0 calc(var(--pad)*-1);padding-left:var(--pad);padding-right:var(--pad)}
+.tl-track::-webkit-scrollbar{display:none}
+.tl-card{flex:0 0 min(78vw,300px);scroll-snap-align:start;background:#fff;border-radius:var(--r);padding:26px;border:1px solid var(--line);display:flex;flex-direction:column;gap:12px;min-height:240px}
+.tl-card .yr{font-family:var(--display);font-weight:800;font-size:44px;letter-spacing:-.04em;line-height:1}
+.tl-card h4{font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:-.01em}
+.tl-card p{font-size:14px;color:var(--ink-2);line-height:1.5}
+.tl-card.hl{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tl-card.hl p{color:rgba(255,255,255,.75)}
+.tl-card.hl .yr{color:var(--red)}
+.tl-card.future{background:var(--red);color:#fff;border-color:var(--red)}
+.tl-card.future p{color:rgba(255,255,255,.88)}
+
+.vm{display:grid;gap:16px;margin-top:clamp(72px,9vw,120px)}
+@media(min-width:980px){.vm{grid-template-columns:1fr 1.3fr}}
+.vm-card{border-radius:24px;padding:clamp(28px,4vw,48px);position:relative;overflow:hidden}
+.vm-vision{background:var(--red);color:#fff;display:flex;flex-direction:column;justify-content:space-between;gap:40px;min-height:380px}
+.vm-vision .eyebrow{color:#fff}
+.vm-vision h3{font-family:var(--display);font-weight:800;font-size:clamp(34px,4.2vw,58px);line-height:.98;letter-spacing:-.035em}
+.vm-vision .yr{font-family:var(--display);font-weight:800;font-size:clamp(64px,8vw,120px);line-height:.8;letter-spacing:-.06em;color:rgba(255,255,255,.2);position:absolute;right:20px;top:24px}
+.vm-mission{background:#fff;border:1px solid var(--line)}
+.vm-mission ol{list-style:none;margin-top:24px;counter-reset:m}
+.vm-mission li{counter-increment:m;display:grid;grid-template-columns:48px 1fr;gap:12px;padding:18px 0;border-top:1px solid var(--line);font-size:15.5px;color:var(--ink-2)}
+.vm-mission li::before{content:"0" counter(m);font-family:var(--display);font-weight:800;color:var(--red);font-size:18px}
+.purpose{margin-top:16px;background:var(--ink);color:#fff;border-radius:24px;padding:clamp(28px,4vw,48px);display:grid;gap:24px}
+@media(min-width:900px){.purpose{grid-template-columns:.5fr 1.5fr;align-items:center}}
+.purpose .eyebrow{color:var(--sun)}
+.purpose p{font-family:var(--display);font-weight:700;font-size:clamp(22px,2.6vw,34px);line-height:1.18;letter-spacing:-.02em}
+.purpose p em{font-family:var(--serif);font-weight:400;color:var(--sun)}
+
+/* BRANDS */
+.brands{background:#fff}
+.brand-grid{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:640px){.brand-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1100px){.brand-grid{grid-template-columns:repeat(4,1fr)}}
+.bcard{border-radius:22px;background:var(--paper);overflow:hidden;display:flex;flex-direction:column;transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s}
+.bcard:hover{transform:translateY(-6px);box-shadow:0 30px 60px -30px rgba(21,19,18,.35)}
+.bcard .logo{aspect-ratio:16/9;display:grid;place-items:center;background:#fff;border-bottom:1px solid var(--line);padding:18px}
+.bcard .logo img{max-height:100%;width:auto;object-fit:contain;mix-blend-mode:multiply}
+.bcard .prod{aspect-ratio:4/3;overflow:hidden;background:#fff}
+.bcard .prod img{width:100%;height:100%;object-fit:contain;transition:transform .6s}
+.bcard:hover .prod img{transform:scale(1.06)}
+.bcard .body{padding:22px 22px 26px}
+.bcard .tag{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
+.bcard h3{font-family:var(--display);font-weight:800;font-size:26px;letter-spacing:-.02em;margin:6px 0 6px}
+.bcard p{font-size:14.5px;color:var(--ink-2)}
+.cats{display:flex;flex-wrap:wrap;gap:8px;margin-top:40px}
+.cats span{padding:9px 16px;border-radius:999px;border:1px solid var(--line);font-size:14px;font-weight:600;background:var(--paper)}
+.clients{margin-top:clamp(56px,8vw,96px);border-top:1px solid var(--line);padding-top:32px;display:grid;gap:20px}
+@media(min-width:900px){.clients{grid-template-columns:240px 1fr;align-items:center}}
+.clients ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px 36px}
+.clients li{font-family:var(--display);font-weight:700;font-size:clamp(18px,2vw,24px);color:#9B948D;letter-spacing:-.01em;transition:color .2s}
+.clients li:hover{color:var(--ink)}
+
+/* STORES */
+.stores{margin-top:clamp(64px,8vw,110px);display:grid;gap:32px}
+@media(min-width:1000px){.stores{grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}}
+.store-grid{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(min-width:700px){.store-grid{grid-template-columns:repeat(4,1fr)}}
+.store-c.join{background:var(--red);color:#fff;text-decoration:none}
+.store-c.join small{color:rgba(255,255,255,.85)}
+.store-c.join:hover{background:var(--red-deep)}
+.store-c.join b{font-size:clamp(18px,1.6vw,21px);line-height:1.1}
+.store-c{background:var(--paper);border-radius:18px;padding:20px;min-height:150px;display:flex;flex-direction:column;gap:8px;transition:background .3s,color .3s,transform .3s}
+.store-c:hover{background:var(--red);color:#fff;transform:translateY(-4px)}
+.store-c:hover small,.store-c:hover .sn{color:rgba(255,255,255,.85)}
+.store-c .sn{font-family:var(--display);font-weight:800;font-size:13px;color:var(--red)}
+.store-c b{font-family:var(--display);font-weight:800;font-size:clamp(22px,2.2vw,28px);letter-spacing:-.025em;line-height:1;margin-top:auto}
+.store-c small{font-size:12.5px;color:var(--muted);line-height:1.35}
+.store-c:first-child{background:var(--ink);color:#fff}
+.store-c:first-child small{color:rgba(255,255,255,.65)}
+
+/* CULTURE */
+.culture{background:var(--ink);color:#fff;overflow:hidden}
+.culture .lead{color:rgba(255,255,255,.72)}
+.culture .eyebrow{color:var(--sun)}
+.smile-word{display:flex;justify-content:space-between;gap:6px;margin:clamp(32px,5vw,56px) 0 0;border-top:1px solid rgba(255,255,255,.14);border-bottom:1px solid rgba(255,255,255,.14)}
+.smile-word button{flex:1 1 0;min-width:0;font-family:var(--display);font-weight:800;font-size:clamp(34px,10.5vw,170px);line-height:1;letter-spacing:-.05em;padding:22px 0 14px;color:rgba(255,255,255,.18);position:relative;transition:color .35s;text-align:center}
+@media(max-width:600px){.smile-word button::after{display:none!important}.smile-word button{padding:18px 0}}
+.smile-word button:hover{color:rgba(255,255,255,.5)}
+.smile-word button[aria-selected="true"]{color:var(--red)}
+.smile-word button::after{content:attr(data-name);overflow-wrap:anywhere;hyphens:auto;display:block;font-family:var(--sans);font-size:clamp(9px,1vw,12px);font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:6px;line-height:1.2}
+.smile-word button[aria-selected="true"]::after{color:#fff}
+.smile-panel{display:grid;gap:28px;padding-top:clamp(32px,5vw,56px);min-height:340px}
+@media(min-width:900px){.smile-panel{grid-template-columns:.9fr 1.1fr;gap:64px}}
+.smile-panel h3{font-family:var(--display);font-weight:800;font-size:clamp(40px,5vw,72px);letter-spacing:-.035em;line-height:1}
+.smile-panel h3 em{font-family:var(--serif);font-weight:400;color:var(--red);display:block;font-size:.55em;letter-spacing:-.01em;margin-top:8px}
+.smile-panel .desc{font-size:clamp(17px,1.5vw,20px);color:rgba(255,255,255,.85);margin-bottom:22px}
+.smile-panel ul{list-style:none;display:grid;gap:10px}
+@media(min-width:600px){.smile-panel ul{grid-template-columns:1fr 1fr}}
+.smile-panel li{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:14px 16px;font-size:14.5px;color:rgba(255,255,255,.85)}
+.smile-panel li b{display:block;color:#fff;font-weight:700;margin-bottom:2px}
+.smile-panel .new{display:inline-block;margin-left:10px;font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.12em;padding:4px 10px;border-radius:999px;background:var(--sun);color:var(--ink);vertical-align:middle}
+.fade-swap{animation:fs .5s ease}
+@keyframes fs{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.mindset{margin-top:clamp(64px,8vw,110px);display:grid;gap:16px}
+@media(min-width:900px){.mindset{grid-template-columns:1fr 1fr}}
+.mind-card{border-radius:22px;padding:clamp(26px,3.5vw,40px);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12)}
+.mind-card h4{font-family:var(--display);font-weight:800;font-size:clamp(28px,3vw,40px);letter-spacing:-.03em;line-height:1}
+.mind-card h4 em{font-family:var(--serif);font-weight:400;color:var(--sun)}
+.chain{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;align-items:center}
+.chain span{padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.08);font-size:13px;font-weight:700;letter-spacing:.06em}
+.chain i{color:var(--red);font-style:normal}
+.chain span:last-child{background:var(--red)}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px;font-size:14px}
+.vs div{padding:12px 14px;border-radius:12px}
+.vs .neg{background:rgba(255,255,255,.04);color:rgba(255,255,255,.45);text-decoration:line-through;text-decoration-color:rgba(225,37,27,.7)}
+.vs .pos{background:rgba(255,255,255,.1);color:#fff;font-weight:600}
+
+/* LIFE */
+.mosaic{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:900px){.mosaic{grid-template-columns:repeat(12,1fr);grid-auto-rows:88px}}
+.tile{position:relative;border-radius:var(--r);overflow:hidden;background:var(--paper-2);aspect-ratio:4/3}
+.tile.wide{grid-column:1/-1}
+@media(min-width:900px){
+ .tile{aspect-ratio:auto}
+ .t1{grid-column:1/8;grid-row:span 5}
+ .t2{grid-column:8/13;grid-row:span 3}
+ .t3{grid-column:8/13;grid-row:span 2}
+ .t4{grid-column:1/5;grid-row:span 3}
+ .t5{grid-column:5/9;grid-row:span 3}
+ .t6{grid-column:9/13;grid-row:span 3}
+ .t7{grid-column:1/6;grid-row:span 4}
+ .t8{grid-column:6/13;grid-row:span 4}
+}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.tile:hover img{transform:scale(1.05)}
+.tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 18px 16px;background:linear-gradient(to top,rgba(0,0,0,.72),transparent);color:#fff;font-size:13px;line-height:1.35}
+.tile figcaption b{display:block;font-family:var(--display);font-size:clamp(15px,1.5vw,20px);letter-spacing:-.01em;font-weight:700}
+.tile.quote{background:var(--red);color:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:22px;aspect-ratio:auto}
+.tile.quote p{font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.3vw,32px);line-height:1.08}
+.tile.quote small{font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;opacity:.85}
+.events{margin-top:clamp(56px,7vw,90px);display:grid;gap:0;border-top:1px solid var(--ink)}
+.ev{display:grid;grid-template-columns:90px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline}
+@media(min-width:760px){.ev{grid-template-columns:140px 1fr}}
+.ev .y{font-family:var(--display);font-weight:800;font-size:28px;letter-spacing:-.03em}
+.ev ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.ev li{padding:7px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:14px;font-weight:600}
+.ev li.r{background:var(--red-soft);border-color:transparent;color:var(--red-deep)}
+
+/* GIVE */
+.give{display:grid;gap:12px;margin-top:12px}
+@media(min-width:760px){.give{grid-template-columns:1fr 1fr}}
+.give-card{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/4.4;background:var(--paper-2)}
+.give-card img{width:100%;height:100%;object-fit:cover;object-position:center 30%;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.give-card:hover img{transform:scale(1.04)}
+.give-card figcaption{position:absolute;left:0;right:0;bottom:0;padding:90px 22px 22px;background:linear-gradient(to top,rgba(0,0,0,.82),rgba(0,0,0,.4) 60%,transparent);color:#fff;font-size:14.5px;line-height:1.45}
+.give-card figcaption b{display:block;font-family:var(--display);font-size:clamp(22px,2.4vw,30px);letter-spacing:-.02em;line-height:1.1;margin:8px 0 6px}
+.give-card .tagp{display:inline-block;padding:5px 12px;border-radius:999px;background:var(--red);font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.quad{display:grid;gap:10px;margin-top:clamp(32px,4vw,48px);position:relative}
+@media(min-width:760px){.quad{grid-template-columns:1.2fr 1fr}}
+.q{border-radius:18px;padding:24px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05)}
+.q.star{background:var(--red);border-color:var(--red)}
+.q small{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.8}
+.q b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(30px,3.4vw,44px);letter-spacing:-.03em;line-height:1;margin:10px 0 8px}
+.q p{color:rgba(255,255,255,.88)!important;font-size:15px}
+
+.together{display:grid;gap:12px;margin-top:12px}
+@media(min-width:760px){.together{grid-template-columns:1fr 1fr}.tg-card.wide{grid-column:1/-1;aspect-ratio:21/8}}
+.tg-card{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3.6;background:var(--paper-2)}
+.tg-card.wide{aspect-ratio:16/9}
+.tg-card img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.tg-card:hover img{transform:scale(1.04)}
+.tg-card figcaption{position:absolute;left:0;right:0;bottom:0;padding:80px 22px 22px;background:linear-gradient(to top,rgba(0,0,0,.82),rgba(0,0,0,.35) 60%,transparent);color:#fff;font-size:14.5px;line-height:1.45}
+.tg-card figcaption b{display:block;font-family:var(--display);font-size:clamp(20px,2.2vw,28px);letter-spacing:-.02em;line-height:1.1;margin:8px 0 6px}
+.tg-card .tagp{display:inline-block;padding:5px 12px;border-radius:999px;background:var(--red);font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+
+/* GROWTH */
+.growth{background:var(--paper-2)}
+.race{background:var(--ink);color:#fff;border-radius:28px;padding:clamp(28px,5vw,64px);position:relative;overflow:hidden}
+.race::before{content:"";position:absolute;inset:auto -10% -40% auto;width:60%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(225,37,27,.45),transparent 65%)}
+.race-top{display:grid;gap:28px;position:relative}
+@media(min-width:900px){.race-top{grid-template-columns:1.2fr .8fr;align-items:end}}
+.race h3{font-family:var(--display);font-weight:800;font-size:clamp(46px,7.5vw,110px);letter-spacing:-.045em;line-height:.88}
+.race h3 span{color:var(--red)}
+.race .eyebrow{color:var(--sun)}
+.race p{color:rgba(255,255,255,.75)}
+.track{position:relative;margin-top:clamp(36px,5vw,60px);display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:900px){.track{grid-template-columns:repeat(4,1fr)}}
+.leg{border-top:3px solid rgba(255,255,255,.25);padding-top:14px}
+.leg:last-child{border-color:var(--red)}
+.leg b{font-family:var(--display);font-size:28px;letter-spacing:-.03em;display:block}
+.leg small{font-size:12px;letter-spacing:.08em;color:rgba(255,255,255,.55);font-weight:700;text-transform:uppercase}
+.leg p{font-size:13.5px;margin-top:6px}
+.pillars{display:grid;gap:10px;margin-top:clamp(28px,4vw,44px);position:relative}
+@media(min-width:760px){.pillars{grid-template-columns:repeat(5,1fr)}}
+.pillar{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:18px}
+.pillar small{color:var(--red);font-weight:800;font-family:var(--display);font-size:14px}
+.pillar h5{font-family:var(--display);font-weight:700;font-size:17px;margin:4px 0 6px;letter-spacing:-.01em;line-height:1.2}
+.pillar p{font-size:13px;line-height:1.45}
+.path{margin-top:clamp(64px,8vw,110px)}
+.steps{display:grid;gap:12px;margin-top:36px;counter-reset:s}
+@media(min-width:980px){.steps{grid-template-columns:repeat(5,1fr)}}
+.step{background:#fff;border-radius:20px;padding:24px;position:relative;border:1px solid var(--line);counter-increment:s;min-height:230px;display:flex;flex-direction:column}
+.step::before{content:"0" counter(s);font-family:var(--display);font-weight:800;font-size:15px;color:#fff;background:var(--ink);width:38px;height:38px;border-radius:50%;display:grid;place-items:center;margin-bottom:22px}
+.step:last-child::before{background:var(--red)}
+.step h4{font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:-.015em;line-height:1.15;margin-bottom:8px}
+.step p{font-size:14px;color:var(--ink-2)}
+@media(min-width:980px){.step:not(:last-child)::after{content:"";position:absolute;right:-12px;top:42px;width:12px;height:2px;background:var(--ink)}}
+.targets{display:grid;gap:12px;margin-top:16px;grid-template-columns:1fr 1fr}
+@media(min-width:980px){.targets{grid-template-columns:repeat(4,1fr)}}
+.target{border-radius:20px;padding:24px;background:var(--red);color:#fff}
+.target:nth-child(2){background:var(--ink)}
+.target:nth-child(3){background:#fff;color:var(--ink);border:1px solid var(--line)}
+.target:nth-child(4){background:var(--sun);color:var(--ink)}
+.target b{font-family:var(--display);font-weight:800;font-size:clamp(36px,4vw,52px);letter-spacing:-.04em;line-height:1;display:block}
+.target span{font-size:13.5px;display:block;margin-top:10px;line-height:1.4}
+.note{font-size:12.5px;color:var(--muted);margin-top:14px}
+
+/* WHY */
+.why-grid{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:24px;overflow:hidden}
+@media(min-width:700px){.why-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1100px){.why-grid{grid-template-columns:repeat(3,1fr)}}
+.why{background:var(--paper);padding:clamp(26px,3vw,38px);transition:background .3s;position:relative}
+.why:hover{background:#fff}
+.why .n{font-family:var(--display);font-weight:800;color:var(--red);font-size:14px;letter-spacing:.04em}
+.why h4{font-family:var(--display);font-weight:700;font-size:clamp(21px,2vw,26px);letter-spacing:-.02em;line-height:1.12;margin:40px 0 10px}
+.why p{font-size:15px;color:var(--ink-2)}
+.why .src{display:inline-block;margin-top:14px;font-size:12px;font-weight:600;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+
+/* TEAM */
+.team{background:#fff}
+.ceo{display:grid;gap:32px;align-items:center;margin-bottom:clamp(48px,6vw,80px)}
+@media(min-width:900px){.ceo{grid-template-columns:380px 1fr;gap:72px}}
+.ceo-photo{position:relative;border-radius:28px;overflow:hidden;background:#c8102e;aspect-ratio:4/5;width:100%;max-width:380px}
+.ceo-photo img{width:100%;height:100%;object-fit:cover;object-position:center 15%}
+.ceo-photo .tag{position:absolute;left:18px;top:18px;padding:7px 14px;border-radius:999px;background:var(--ink);color:#fff;font-size:12px;font-weight:700;letter-spacing:.06em}
+.ceo blockquote{font-family:var(--display);font-weight:700;font-size:clamp(28px,3.6vw,50px);letter-spacing:-.03em;line-height:1.05}
+.ceo blockquote em{font-family:var(--serif);font-weight:400;color:var(--red)}
+.ceo .who{margin-top:24px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.ceo .who b{font-family:var(--display);font-size:22px;letter-spacing:-.01em}
+.ceo .facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.ceo .facts span{padding:8px 14px;border-radius:999px;background:var(--paper);font-size:13.5px;font-weight:600}
+.leaders{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:760px){.leaders{grid-template-columns:repeat(4,1fr)}}
+.leader{border-radius:20px;background:var(--paper);padding:22px;display:flex;flex-direction:column;gap:18px;transition:background .3s,color .3s,transform .3s}
+.leader:hover{background:var(--ink);color:#fff;transform:translateY(-4px)}
+.leader:hover .role{color:rgba(255,255,255,.7)}
+.av{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:20px;letter-spacing:-.02em;background:#fff;color:var(--red);border:1.5px solid var(--red)}
+.leader b{font-family:var(--display);font-size:19px;letter-spacing:-.015em;display:block;line-height:1.15}
+.leader .role{font-size:13.5px;color:var(--muted);margin-top:4px;display:block}
+.join-card{border-radius:20px;background:var(--red);color:#fff;padding:22px;display:flex;flex-direction:column;justify-content:space-between;gap:18px}
+.join-card b{font-family:var(--display);font-size:22px;letter-spacing:-.02em;line-height:1.1}
+.join-card a{font-weight:700;font-size:14px;display:inline-flex;gap:8px;align-items:center}
+
+/* JOBS */
+.jobs-bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.chip{padding:10px 18px;border-radius:999px;border:1.5px solid var(--line);font-size:14px;font-weight:700;background:#fff;transition:all .2s}
+.chip:hover{border-color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.chip .c{opacity:.55;margin-left:6px;font-weight:600}
+.job-search{flex:1 1 220px;max-width:340px;margin-left:auto;position:relative}
+.job-search input{width:100%;padding:11px 16px 11px 42px;border-radius:999px;border:1.5px solid var(--line);background:#fff;font:inherit;font-size:14px}
+.job-search svg{position:absolute;left:15px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--muted)}
+.job-list{border-top:1px solid var(--ink)}
+.job{border-bottom:1px solid var(--line)}
+.job-h{width:100%;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:24px 0;text-align:left}
+@media(min-width:900px){.job-h{grid-template-columns:2fr 1fr 1.2fr 1fr auto}}
+.job-h .t{font-family:var(--display);font-weight:700;font-size:clamp(20px,2vw,26px);letter-spacing:-.02em;line-height:1.15;transition:color .2s}
+.job-h:hover .t{color:var(--red)}
+.job-h .m{display:none;font-size:14px;color:var(--ink-2)}
+@media(min-width:900px){.job-h .m{display:block}}
+.job-h .mm{display:block;font-size:13px;color:var(--muted);margin-top:6px;font-family:var(--sans);font-weight:500;letter-spacing:0}
+@media(min-width:900px){.job-h .mm{display:none}}
+.job-h .tog{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center;transition:transform .35s,background .2s,color .2s}
+.job-h[aria-expanded="true"] .tog{transform:rotate(45deg);background:var(--ink);color:#fff}
+.job-h .tog svg{width:16px;height:16px}
+.job-b{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s cubic-bezier(.2,.7,.2,1)}
+.job-b>div{overflow:hidden}
+.job.open .job-b{grid-template-rows:1fr}
+.job-in{display:grid;gap:28px;padding:0 0 32px}
+@media(min-width:900px){.job-in{grid-template-columns:1fr 1fr 280px;gap:40px}}
+.job-in h5{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:12px}
+.job-in ul{list-style:none;display:grid;gap:9px}
+.job-in li{font-size:15px;color:var(--ink-2);padding-left:20px;position:relative}
+.job-in li::before{content:"";position:absolute;left:0;top:10px;width:8px;height:2px;background:var(--red)}
+.job-side{background:#fff;border-radius:18px;padding:22px;border:1px solid var(--line);display:flex;flex-direction:column;gap:14px;align-self:start}
+.job-side dl{display:grid;gap:10px;font-size:14px}
+.job-side dt{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.job-side dd{font-weight:600}
+.job-side .btn{justify-content:center}
+.empty{padding:40px 0;color:var(--muted);display:none}
+.jobs-note{display:flex;gap:16px;align-items:flex-start;margin-top:32px;padding:22px;border-radius:18px;background:var(--paper-2);font-size:14.5px;color:var(--ink-2)}
+.jobs-note b{color:var(--ink)}
+
+.ask{margin-top:40px;display:grid;gap:24px;padding:clamp(24px,3vw,36px);border-radius:24px;background:#fff;border:1px solid var(--line)}
+@media(min-width:900px){.ask{grid-template-columns:1fr auto;align-items:center}}
+.ask-btns{display:flex;flex-wrap:wrap;gap:10px}
+.ask-btn{display:inline-flex;align-items:center;gap:12px;padding:12px 20px 12px 14px;border-radius:999px;color:#fff;transition:transform .2s,filter .2s}
+.ask-btn:hover{transform:translateY(-2px);filter:brightness(1.05)}
+.ask-btn svg{width:26px;height:26px;flex:none}
+.ask-btn small{display:block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.85;line-height:1.2}
+.ask-btn b{display:block;font-size:15px;line-height:1.2}
+.ask-btn.wa{background:#1FA855}
+.ask-btn.ig{background:linear-gradient(135deg,#F58529,#DD2A7B 50%,#8134AF)}
+.cta .btn svg{width:18px;height:18px}
+
+/* CTA */
+.cta{background:var(--red);color:#fff;overflow:hidden;padding:clamp(90px,12vw,170px) 0}
+.cta h2{font-size:clamp(54px,11vw,170px)}
+.cta h2 em{font-family:var(--serif);font-weight:400;display:block;font-size:.42em;letter-spacing:-.01em;margin-top:14px;color:rgba(255,255,255,.92)}
+.cta .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
+.cta .btn-ghost{border-color:#fff;color:#fff}
+.cta .btn-ghost:hover{background:#fff;color:var(--red)}
+.cta-ring{position:absolute;right:-12vw;top:50%;transform:translateY(-50%);width:min(60vw,720px);opacity:.12;pointer-events:none}
+
+/* FOOTER */
+footer{background:var(--ink);color:rgba(255,255,255,.75);padding:72px 0 36px;font-size:14.5px}
+.foot{display:grid;gap:40px}
+@media(min-width:900px){.foot{grid-template-columns:1.4fr 1fr 1fr 1fr}}
+.foot h6{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:14px}
+.foot ul{list-style:none;display:grid;gap:8px}
+.foot a:hover{color:#fff}
+.foot .brand{color:#fff}
+.foot .brand img{background:#fff;border-radius:50%}
+.foot-b{margin-top:56px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13px;color:rgba(255,255,255,.5)}
+
+/* MODAL */
+.modal{position:fixed;inset:0;z-index:80;display:none;align-items:flex-end;justify-content:center;background:rgba(21,19,18,.55);backdrop-filter:blur(4px)}
+.modal.show{display:flex}
+@media(min-width:700px){.modal{align-items:center;padding:24px}}
+.sheet{background:var(--paper);width:100%;max-width:640px;max-height:92svh;overflow:auto;border-radius:26px 26px 0 0;padding:28px clamp(20px,4vw,40px) 32px;animation:sh .45s cubic-bezier(.2,.8,.2,1)}
+@media(min-width:700px){.sheet{border-radius:26px}}
+@keyframes sh{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}
+.sheet-h{display:flex;justify-content:space-between;align-items:start;gap:16px;margin-bottom:20px}
+.sheet-h h3{font-family:var(--display);font-weight:800;font-size:clamp(28px,3.5vw,38px);letter-spacing:-.03em;line-height:1}
+.x{width:42px;height:42px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center;flex:none}
+.x svg{width:16px;height:16px}
+.form{display:grid;gap:14px}
+@media(min-width:600px){.form{grid-template-columns:1fr 1fr}.form .full{grid-column:1/-1}}
+.field label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}
+.field input,.field select,.field textarea{width:100%;padding:13px 14px;border-radius:12px;border:1.5px solid var(--line);background:#fff;font:inherit;font-size:15px;color:var(--ink)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--ink)}
+.field textarea{min-height:96px;resize:vertical}
+.field .err{display:none;color:var(--red);font-size:12.5px;margin-top:4px}
+.field.bad input,.field.bad select{border-color:var(--red)}
+.field.bad .err{display:block}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--ink-2)}
+.consent input{margin-top:3px;accent-color:var(--red);width:18px;height:18px;flex:none}
+.done{display:none;text-align:left}
+.done .ok{width:56px;height:56px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;margin-bottom:18px}
+.done pre{white-space:pre-wrap;font-family:var(--sans);font-size:13.5px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;margin:16px 0;color:var(--ink-2);max-height:220px;overflow:auto}
+.done .row{display:flex;flex-wrap:wrap;gap:10px}
+.toast{opacity:0;pointer-events:none;position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(120px);background:var(--ink);color:#fff;padding:12px 20px;border-radius:999px;font-size:14px;font-weight:600;z-index:90;transition:transform .35s}
+.toast.show{transform:translateX(-50%);opacity:1}
+.fab{position:fixed;right:16px;bottom:16px;z-index:40;display:none}
+@media(max-width:639px){.fab.on{display:inline-flex}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="brand" aria-label="SISTA Group">
+      <img src="img/logo.png" alt="">
+      <span>SISTA<small data-i18n="nav.careers">Karier</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Navigasi utama">
+      <a href="#tentang" data-i18n="nav.about">Tentang</a>
+      <a href="#brand" data-i18n="nav.brands">Brand</a>
+      <a href="#budaya" data-i18n="nav.culture">Budaya</a>
+      <a href="#life" data-i18n="nav.life">Life at SISTA</a>
+      <a href="#bertumbuh" data-i18n="nav.growth">Bertumbuh</a>
+      <a href="#tim" data-i18n="nav.team">Tim</a>
+      <a href="#lowongan" data-i18n="nav.jobs">Lowongan</a>
+    </nav>
+    <div class="nav-r">
+      <div class="lang" role="group" aria-label="Bahasa / Language">
+        <button type="button" data-lang="id" aria-pressed="true">ID</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a href="#lowongan" class="btn btn-red" data-i18n="cta.apply">Lamar Sekarang</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mmenu" aria-hidden="true">
+  <a href="#tentang"><span>01</span><b data-i18n="nav.about">Tentang</b></a>
+  <a href="#brand"><span>02</span><b data-i18n="nav.brands">Brand</b></a>
+  <a href="#budaya"><span>03</span><b data-i18n="nav.culture">Budaya</b></a>
+  <a href="#life"><span>04</span><b data-i18n="nav.life">Life at SISTA</b></a>
+  <a href="#bertumbuh"><span>05</span><b data-i18n="nav.growth">Bertumbuh</b></a>
+  <a href="#kenapa"><span>06</span><b data-i18n="nav.why">Kenapa SISTA</b></a>
+  <a href="#tim"><span>07</span><b data-i18n="nav.team">Tim</b></a>
+  <a href="#lowongan"><span>08</span><b data-i18n="nav.jobs">Lowongan</b></a>
+  <a href="#lowongan" class="btn btn-red" data-i18n="cta.seeJobs">Lihat Lowongan</a>
+</div>
+
+<main id="top">
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-kicker">
+        <span class="pill"><span class="dot"></span><span data-i18n="hero.pill">Kami sedang merekrut</span></span>
+        <span class="pill" data-i18n="hero.pill2">Solo · Surabaya · Seluruh Indonesia</span>
+      </div>
+      <h1 class="h-xl" aria-label="Grow Career With Us">
+        <span class="ln"><span>GROW</span></span>
+        <span class="ln"><span>CAREER</span></span>
+        <span class="ln"><span class="red">WITH US.</span></span>
+      </h1>
+      <p class="hero-sub" data-i18n="hero.sub">Bangun masa depanmu bersama SISTA.</p>
+      <p class="lead" data-i18n="hero.lead">Dari toko kecil di Solo tahun 1979 hingga melayani ribuan mitra retail di seluruh Indonesia — dan perjalanan kami baru saja dimulai. Kami mencari orang-orang yang ingin bertumbuh, memimpin, dan membangun sesuatu yang berarti.</p>
+      <div class="hero-ctas">
+        <a href="#lowongan" class="btn btn-red"><span data-i18n="cta.seeJobs">Lihat Lowongan</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#tentang" class="btn btn-ghost" data-i18n="cta.meet">Kenali SISTA</a>
+      </div>
+    </div>
+    <div class="hero-media rv">
+      <div class="hero-badge"><span><b>2030</b><span data-i18n="hero.badge">Super Brand No.1</span></span></div>
+      <figure class="f1"><img src="img/drini.jpg" alt="Tim SISTA Group di Outbound &amp; Piknik 2026, Drini Park" fetchpriority="high"><figcaption data-i18n="hero.cap1">Outbound &amp; Piknik 2026 · Drini Park</figcaption></figure>
+      <figure class="f2"><img src="img/training.jpg" alt="Training karyawan SISTA"><figcaption data-i18n="hero.cap2">Training karyawan</figcaption></figure>
+      <figure class="f3"><img src="img/persekutuan.jpg" alt="Tim kantor SISTA"><figcaption data-i18n="hero.cap3">Satu tim, satu keluarga</figcaption></figure>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Spirituality</span><span>Mentality</span><span>Integrity</span><span>Loyalty</span><span>Empathy</span><span>Continuous Improvement</span><span>Ownership</span><span>Grow Career With Us</span>
+      <span>Spirituality</span><span>Mentality</span><span>Integrity</span><span>Loyalty</span><span>Empathy</span><span>Continuous Improvement</span><span>Ownership</span><span>Grow Career With Us</span>
+    </div>
+  </div>
+</section>
+
+<!-- 2. ABOUT -->
+<section class="sec" id="tentang">
+  <div class="wrap">
+    <div class="about-intro">
+      <div class="rv">
+        <span class="eyebrow" data-i18n="about.eye">Tentang SISTA</span>
+        <h2 class="big-quote" style="margin-top:22px" data-i18n="about.h">Kami tidak hanya membangun bisnis — <em>kami membangun warisan.</em></h2>
+      </div>
+      <div class="about-copy lead rv d1">
+        <p data-i18n="about.p1">SISTA Group adalah importir dan distributor aksesoris lifestyle wanita yang berbasis di Solo. Kami mengimpor langsung dari pabrik terpercaya di luar negeri, lalu menyalurkannya ke toko swalayan, toko fashion, toko kosmetik, gift shop, dan toko alat tulis di seluruh Indonesia — lengkap dengan legalitas impor dan faktur pajak resmi.</p>
+        <p data-i18n="about.p2">Selain sebagai importir, kami membangun brand sendiri — Hanami, Estella, Twinkle, dan Annabelle's — dan mengoperasikan toko offline, gudang distribusi, serta armada pengiriman sendiri. Yang membuat kami berbeda bukan sekadar harga, tetapi <b>pelayanan prima</b> dan komitmen untuk tumbuh bersama mitra.</p>
+      </div>
+    </div>
+
+    <div class="stats rv">
+      <div class="stat"><b>150+</b><span data-i18n="stat.1">orang dalam tim SISTA</span></div>
+      <div class="stat"><b>9</b><span data-i18n="stat.2">toko di Solo &amp; Surabaya</span></div>
+      <div class="stat"><b>1979</b><span data-i18n="stat.6">akar bisnis keluarga di Solo</span></div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-head">
+        <div>
+          <span class="eyebrow" data-i18n="tl.eye">Perjalanan Kami</span>
+          <h3 class="h-l" style="margin-top:14px" data-i18n="tl.h">Dari toko kelontong <span class="it">ke impian besar.</span></h3>
+        </div>
+        <div class="tl-ctrl">
+          <button type="button" id="tlPrev" aria-label="Sebelumnya"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+          <button type="button" id="tlNext" aria-label="Berikutnya"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+      <div class="tl-track" id="tlTrack">
+        <article class="tl-card"><span class="yr">1979</span><h4 data-i18n="tl.1h">Benih pertama</h4><p data-i18n="tl.1p">Arief Hakim membuka toko kelontong kecil di Solo — awal dari perjalanan keluarga SISTA.</p></article>
+        <article class="tl-card"><span class="yr">2006</span><h4 data-i18n="tl.2h">Merintis distribusi</h4><p data-i18n="tl.2p">Andri Hakim bergabung di Bunga Mas dan merintis bisnis distribusi bersama keluarga.</p></article>
+        <article class="tl-card"><span class="yr">2009</span><h4 data-i18n="tl.3h">Menuju bisnis modern</h4><p data-i18n="tl.3p">Komputerisasi pertama — pencatatan mulai digital, sistem operasional makin tertata hingga 2011.</p></article>
+        <article class="tl-card"><span class="yr">2012</span><h4 data-i18n="tl.4h">Titik balik</h4><p data-i18n="tl.4p">Seluruh hutang lunas — fondasi kuat untuk ekspansi masa depan.</p></article>
+        <article class="tl-card hl"><span class="yr">2019</span><h4 data-i18n="tl.5h">Nama SISTA lahir</h4><p data-i18n="tl.5p">Impor resmi dimulai. SISTA hadir sebagai importir aksesoris wanita tangan pertama.</p></article>
+        <article class="tl-card"><span class="yr">2020</span><h4 data-i18n="tl.6h">SISTA Group berdiri</h4><p data-i18n="tl.6p">Kantor baru dan gudang distribusi pertama beroperasi penuh.</p></article>
+        <article class="tl-card"><span class="yr">2021</span><h4 data-i18n="tl.7h">Transformasi mindset</h4><p data-i18n="tl.7p">Era digital dimulai — pelatihan online menjadi awal transformasi mindset tim.</p></article>
+        <article class="tl-card"><span class="yr">2022–25</span><h4 data-i18n="tl.8h">Tumbuh bersama tim</h4><p data-i18n="tl.8p">Training karyawan, outbound, reward trip untuk tim terbaik, hingga Total Quality Movement di 2025.</p></article>
+        <article class="tl-card hl"><span class="yr">2026</span><h4 data-i18n="tl.9h">Bersyukur &amp; berbagi</h4><p data-i18n="tl.9p">Reward Umroh untuk karyawan, outbound Drini Park, dan CSR untuk keluarga besar SISTA.</p></article>
+        <article class="tl-card future"><span class="yr">2030</span><h4 data-i18n="tl.10h">Tujuan kita</h4><p data-i18n="tl.10p">Super Brand Lifestyle Aksesoris No. 1 di Indonesia. Dan kamu bisa jadi bagian dari perjalanan ini.</p></article>
+      </div>
+    </div>
+
+    <div class="vm">
+      <div class="vm-card vm-vision rv">
+        <span class="eyebrow" data-i18n="vm.v">Visi</span>
+        <h3 data-i18n="vm.vh">Menjadi Super Brand Lifestyle Aksesoris No. 1 di Indonesia.</h3>
+        <span class="yr">2030</span>
+      </div>
+      <div class="vm-card vm-mission rv d1">
+        <span class="eyebrow" data-i18n="vm.m">Misi</span>
+        <ol>
+          <li data-i18n="vm.m1">Menjadi perusahaan yang berlandaskan nilai-nilai spiritualitas, yang membentuk setiap karyawan menjadi pribadi yang beriman dan bertakwa.</li>
+          <li data-i18n="vm.m2">Bekerja sama dengan sebanyak-banyaknya mitra pelanggan untuk membuka lapangan kerja baru dan mengurangi pengangguran di Indonesia.</li>
+          <li data-i18n="vm.m3">Mengangkat harkat dan martabat setiap insan di perusahaan untuk terus maju, bertumbuh, dan naik level — menjadi SDM yang andal dan ahli di bidangnya.</li>
+          <li data-i18n="vm.m4">Berkontribusi bagi bangsa melalui misi sosial dan upaya mengentaskan kemiskinan di Indonesia.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="purpose rv">
+      <span class="eyebrow" data-i18n="vm.p">Business Purpose</span>
+      <p data-i18n="vm.ph">Mendukung UMKM untuk <em>tumbuh bersama</em> dalam bisnis lifestyle aksesoris — dengan membangun kenyamanan, kolaborasi, dan hubungan yang saling menguntungkan.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. BRANDS -->
+<section class="sec brands" id="brand">
+  <div class="wrap">
+    <div class="sec-head split">
+      <div class="rv">
+        <span class="eyebrow" data-i18n="br.eye">Brand Kami</span>
+        <h2 class="h-l" style="margin-top:16px" data-i18n="br.h">Empat brand, <span class="it">satu standar.</span></h2>
+      </div>
+      <p class="lead rv d1" data-i18n="br.lead">Setiap brand dirancang untuk segmen pasar yang berbeda, namun tetap memegang nilai utama SISTA: kualitas, estetika, dan konsistensi. Brand milik sendiri adalah wujud kepekaan kami membaca tren — dan bagian penting dari perjalanan menuju visi 2030.</p>
+    </div>
+    <div class="brand-grid">
+      <article class="bcard rv"><div class="logo"><img src="img/logo_hanami.jpg" alt="Logo Hanami"></div><div class="prod"><img src="img/prod_hanami.jpg" alt="Produk Hanami: ikat rambut"></div><div class="body"><span class="tag">Premium Accessories</span><h3>Hanami</h3><p data-i18n="br.hanami">Aksesoris rambut premium untuk pelanggan yang menginginkan kualitas di setiap detail.</p></div></article>
+      <article class="bcard rv d1"><div class="logo"><img src="img/logo_estella.jpg" alt="Logo Estella"></div><div class="prod"><img src="img/prod_estella.jpg" alt="Produk Estella: bando"></div><div class="body"><span class="tag">Fashion Accessories</span><h3>Estella</h3><p data-i18n="br.estella">Aksesoris fashion yang mengikuti tren — jepit, bando, dan pelengkap gaya sehari-hari.</p></div></article>
+      <article class="bcard rv d2"><div class="logo"><img src="img/logo_twinkle.jpg" alt="Logo Twinkle"></div><div class="prod"><img src="img/prod_twinkle.jpg" alt="Produk Twinkle: gantungan kunci"></div><div class="body"><span class="tag">My Favourite Keychain</span><h3>Twinkle</h3><p data-i18n="br.twinkle">Gantungan kunci yang lucu dan penuh karakter — favorit di rak toko mitra kami.</p></div></article>
+      <article class="bcard rv d3"><div class="logo"><img src="img/logo_annabelle.jpg" alt="Logo Annabelle's"></div><div class="prod"><img src="img/prod_annabelle.jpg" alt="Produk Annabelle's: tote bag"></div><div class="body"><span class="tag">Lifestyle Collection</span><h3>Annabelle's</h3><p data-i18n="br.annabelle">Koleksi lifestyle — tas dan pouch untuk menemani aktivitas sehari-hari.</p></div></article>
+    </div>
+    <div class="stores">
+      <div class="stores-head rv">
+        <span class="eyebrow" data-i18n="so.eye">Toko Kami</span>
+        <h3 class="h-l" style="margin-top:14px" data-i18n="so.h">9 toko, <span class="it">satu keluarga SISTA.</span></h3>
+        <p class="lead" style="margin-top:16px" data-i18n="so.p">Toko-toko kami adalah tempat tim SISTA menghadirkan Service Excellence setiap hari — sekaligus showroom bagi mitra bisnis kami.</p>
+      </div>
+      <ul class="store-grid"><li class="store-c rv"><span class="sn">01</span><b>Sista<br>Aksesoris</b><small>Solo · Jl. Yos Sudarso No. 26</small></li><li class="store-c rv d1"><span class="sn">02</span><b>Sista<br>Surabaya</b><small>Surabaya · Jl. Kapasan 172</small></li><li class="store-c rv d2"><span class="sn">03</span><b>Sista<br>Collection</b></li><li class="store-c rv d3"><span class="sn">04</span><b>Sista<br>Fancy</b></li><li class="store-c rv"><span class="sn">05</span><b>Sista<br>Jewellery</b></li><li class="store-c rv d1"><span class="sn">06</span><b>Sista<br>Gift</b></li><li class="store-c rv d2"><span class="sn">07</span><b>Sista<br>Bags</b></li><li class="store-c join rv d3"><a href="#lowongan" style="display:contents"><span class="sn" style="color:#fff" data-i18n="so.j1">Bergabung</span><b data-i18n="so.j2">Tim toko kami →</b><small data-i18n="so.j3">Lihat lowongan Kasir Toko</small></a></li></ul>
+    </div>
+    <div class="cats rv">
+      <span data-i18n="cat.1">Aksesoris rambut</span><span data-i18n="cat.2">Makeup &amp; kecantikan</span><span data-i18n="cat.3">Cermin &amp; sisir</span><span data-i18n="cat.4">Botol minum &amp; tumbler</span><span data-i18n="cat.5">Gantungan kunci</span><span data-i18n="cat.6">Tas &amp; pouch</span><span data-i18n="cat.7">Alat tulis kantor</span>
+    </div>
+  </div>
+</section>
+
+<!-- 4. CULTURE -->
+<section class="sec culture" id="budaya">
+  <div class="wrap">
+    <div class="sec-head split" style="margin-bottom:0">
+      <div class="rv">
+        <span class="eyebrow" data-i18n="cu.eye">Budaya Kami · SMILECO</span>
+        <h2 class="h-l" style="margin-top:16px" data-i18n="cu.h">Budaya bukan slogan di dinding. <span class="it">Ini DNA kami.</span></h2>
+      </div>
+      <p class="lead rv d1" data-i18n="cu.lead">Culture adalah kepribadian perusahaan — apa yang kita lakukan saat tidak ada yang melihat. Dari CEO sampai tim gudang, setiap orang adalah penjaga budaya SISTA. Pilih satu huruf untuk mengenalnya.</p>
+    </div>
+    <div class="smile-word rv" style="max-width:100%" role="tablist" aria-label="SMILECO" id="smileWord"></div>
+    <div class="smile-panel" id="smilePanel" role="tabpanel" aria-live="polite"></div>
+
+  </div>
+</section>
+
+<!-- 5. LIFE -->
+<section class="sec" id="life">
+  <div class="wrap">
+    <div class="sec-head split">
+      <div class="rv">
+        <span class="eyebrow" data-i18n="li.eye">Life at SISTA</span>
+        <h2 class="h-l" style="margin-top:16px" data-i18n="li.h">Bekerja keras, <span class="it">tumbuh bersama.</span></h2>
+      </div>
+      <p class="lead rv d1" data-i18n="li.lead">Dari bongkar kontainer di gudang hingga melayani pelanggan di toko, dari sesi training hingga outbound tahunan — beginilah keseharian kami.</p>
+    </div>
+    <div class="mosaic">
+      <figure class="tile t1 rv"><img src="img/training.jpg" alt=""><figcaption><b data-i18n="li.c1">Create Winner Mentality</b><span data-i18n="li.c1s">Training karyawan bersama</span></figcaption></figure>
+      <figure class="tile t2 rv d1"><img src="img/outbound.jpg" alt=""><figcaption><b data-i18n="li.c2">Outbound · Character Development</b><span>Umbul Sidomukti</span></figcaption></figure>
+      <div class="tile t3 quote rv d2"><p data-i18n="li.q">"Kesuksesan bisnis harus memberi manfaat bagi orang banyak."</p><small>SISTA Group</small></div>
+      <figure class="tile t4 rv"><img src="img/container.jpg" alt=""><figcaption><b data-i18n="li.c4">Bongkar kontainer</b><span data-i18n="li.c4s">Impor langsung dari pabrik</span></figcaption></figure>
+      <figure class="tile t5 rv d1"><img src="img/shelves.jpg" alt=""><figcaption><b data-i18n="li.c5">Gudang distribusi Solo</b><span data-i18n="li.c5s">Ribuan SKU siap kirim</span></figcaption></figure>
+      <figure class="tile t6 rv d2"><img src="img/store_solo.jpg" alt=""><figcaption><b>Sista Aksesoris Solo</b><span>Jl. Yos Sudarso No. 26</span></figcaption></figure>
+      <figure class="tile t7 rv"><img src="img/display2.jpg" alt=""><figcaption><b data-i18n="li.c7">Display toko</b><span data-i18n="li.c7s">Showroom untuk mitra B2B</span></figcaption></figure>
+      <figure class="tile t8 rv d1"><img src="img/display4.jpg" alt=""><figcaption><b data-i18n="li.c8">Detail yang terkurasi</b><span data-i18n="li.c8s">Produk dipilih dengan mata yang jeli terhadap tren</span></figcaption></figure>
+    </div>
+
+    <div class="give">
+      <figure class="give-card rv"><img src="img/umroh.jpg" alt="Penyerahan hadiah Umroh 2026 untuk karyawan SISTA"><figcaption><span class="tagp" data-i18n="gv.t1">Apresiasi Karyawan</span><b data-i18n="gv.h1">Reward Umroh 2026</b><span data-i18n="gv.p1">Kerja adalah ibadah. Sebagai bentuk syukur, SISTA memberangkatkan karyawan untuk menunaikan ibadah Umroh.</span></figcaption></figure>
+      <figure class="give-card rv d1"><img src="img/csr_toilet.jpg" alt="Serah terima bantuan CSR SISTA Group berupa pembangunan toilet"><figcaption><span class="tagp" data-i18n="gv.t2">CSR · Peduli Sesama</span><b data-i18n="gv.h2">Pembangunan toilet untuk karyawan</b><span data-i18n="gv.p2">"Kesuksesan bisnis harus memberi manfaat bagi orang banyak." Bantuan CSR SISTA berupa pembangunan toilet di rumah karyawan.</span></figcaption></figure>
+    </div>
+
+    <div class="together">
+      <figure class="tg-card wide rv"><img src="img/drini.jpg" alt="Outbound dan Piknik SISTA Group 2026 di Drini Park"><figcaption><span class="tagp" data-i18n="tg2.t1">Kebersamaan</span><b data-i18n="tg2.h1">Outbound &amp; Piknik 2026 · Drini Park</b><span data-i18n="tg2.p1">Satu hari penuh tawa bersama seluruh keluarga besar SISTA — good vibes only.</span></figcaption></figure>
+      <figure class="tg-card rv"><img src="img/pengajian.jpg" alt="Pengajian dan buka bersama SISTA Group"><figcaption><span class="tagp" data-i18n="tg2.t2">Spirituality</span><b data-i18n="tg2.h2">Pengajian &amp; buka bersama</b><span data-i18n="tg2.p2">Menguatkan iman dan silaturahmi bersama rekan kerja.</span></figcaption></figure>
+      <figure class="tg-card rv d1"><img src="img/persekutuan.jpg" alt="Persekutuan Kristiani karyawan SISTA"><figcaption><span class="tagp" data-i18n="tg2.t3">Spirituality</span><b data-i18n="tg2.h3">Persekutuan Kristiani</b><span data-i18n="tg2.p3">Ruang bagi setiap karyawan untuk bertumbuh dalam iman masing-masing.</span></figcaption></figure>
+    </div>
+
+    <div class="events rv">
+      <div class="ev"><span class="y">2022</span><ul><li data-i18n="ev.1">Outbound Umbul Sidomukti</li><li class="r" data-i18n="ev.3">Reward trip Bali untuk tim terbaik</li></ul></div>
+      <div class="ev"><span class="y">2023</span><ul><li data-i18n="ev.4">Anniversary ke-3</li><li data-i18n="ev.5">Outbound Tubing Klaten</li><li class="r" data-i18n="ev.6">Reward trip Bromo–Batu</li></ul></div>
+      <div class="ev"><span class="y">2024</span><ul><li data-i18n="ev.7">Anniversary ke-4</li><li data-i18n="ev.9">Penguatan budaya &amp; sistem</li></ul></div>
+      <div class="ev"><span class="y">2025</span><ul><li data-i18n="ev.10">Total Quality Movement</li><li data-i18n="ev.11">Anniversary ke-5</li><li data-i18n="ev.12">Outbound Rafting Elo River</li><li class="r" data-i18n="ev.13">CSR: donasi untuk korban bencana Sumut &amp; Aceh Tamiang via PMI</li></ul></div>
+      <div class="ev"><span class="y">2026</span><ul><li class="r" data-i18n="ev.14">Reward Umroh untuk karyawan</li><li class="r" data-i18n="ev.15">CSR: pembangunan toilet untuk karyawan</li><li data-i18n="ev.16">Outbound Drini Park</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. GROWTH -->
+<section class="sec growth" id="bertumbuh">
+  <div class="wrap">
+    <div class="sec-head split">
+      <div class="rv">
+        <span class="eyebrow" data-i18n="gr.eye">Bertumbuh &amp; Karier</span>
+        <h2 class="h-l" style="margin-top:16px" data-i18n="gr.h">Di sini, kamu <span class="it">naik level.</span></h2>
+      </div>
+      <p class="lead rv d1" data-i18n="gr.lead">Misi kami adalah mengangkat harkat dan martabat setiap insan di perusahaan — agar terus maju, bertumbuh, dan naik level ke jenjang yang lebih tinggi, menjadi SDM yang andal dan ahli di bidangnya.</p>
+    </div>
+
+    <div class="race rv">
+      <div class="race-top">
+        <div>
+          <span class="eyebrow" data-i18n="st.eye">Siapa yang kami cari</span>
+          <h3 style="margin-top:16px" data-i18n="st.h">KAMI<br>MENCARI <span>BINTANG.</span></h3>
+        </div>
+        <p data-i18n="st.p">Di SISTA, sikap sama pentingnya dengan kinerja. Attitude yang positif ditambah performa yang tinggi — itulah masa depan perusahaan ini. Dan jika sikapmu sudah benar, kami siap membantumu meningkatkan skill.</p>
+      </div>
+      <div class="quad">
+        <div class="q star"><small data-i18n="st.s1">Sikap BAIK · Kinerja BAIK</small><b data-i18n="st.n1">Bintang</b><p data-i18n="st.d1">Inilah yang SISTA cari. Kamu adalah masa depan perusahaan ini.</p></div>
+        <div class="q pot"><small data-i18n="st.s2">Sikap BAIK · Kinerja bertumbuh</small><b data-i18n="st.n2">Potensial</b><p data-i18n="st.d2">Attitude-mu sudah benar — tinggal tingkatkan skill. Ada banyak ruang untuk bertumbuh.</p></div>
+      </div>
+    </div>
+
+    <div class="path">
+      <div class="rv">
+        <span class="eyebrow" data-i18n="pa.eye">Jalur Pertumbuhanmu</span>
+        <h3 class="h-l" style="margin-top:14px;max-width:16ch" data-i18n="pa.h">Dari hari pertama <span class="it">hingga memimpin.</span></h3>
+      </div>
+      <div class="steps">
+        <div class="step rv"><h4 data-i18n="pa.1h">Onboarding budaya</h4><p data-i18n="pa.1p">Program pembekalan karyawan baru: sejarah, company profile, dan budaya SMILE CO.</p></div>
+        <div class="step rv d1"><h4 data-i18n="pa.2h">Training karyawan</h4><p data-i18n="pa.2p">Training seperti Create Winner Mentality, outbound pengembangan karakter, dan gerakan Total Quality Movement.</p></div>
+        <div class="step rv d2"><h4 data-i18n="pa.3h">Sikap + kinerja</h4><p data-i18n="pa.3p">Kamu dinilai dari attitude dan performa — dua hal yang membedakan karyawan biasa dengan luar biasa.</p></div>
+        <div class="step rv d3"><h4 data-i18n="pa.4h">Naik level</h4><p data-i18n="pa.4p">Bertumbuh ke jenjang yang lebih tinggi dan menjadi ahli di bidangmu, seiring tumbuhnya SISTA.</p></div>
+        <div class="step rv d4"><h4 data-i18n="pa.5h">Diapresiasi</h4><p data-i18n="pa.5p">Tim terbaik diganjar reward trip ke Bali dan Bromo–Batu, hingga reward Umroh di 2026.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. WHY -->
+<section class="sec" id="kenapa">
+  <div class="wrap">
+    <div class="sec-head split">
+      <div class="rv">
+        <span class="eyebrow" data-i18n="wy.eye">Kenapa SISTA</span>
+        <h2 class="h-l" style="margin-top:16px" data-i18n="wy.h">Bukan sekadar tempat bekerja. <span class="it">Tempat untuk bertumbuh.</span></h2>
+      </div>
+      <p class="lead rv d1" data-i18n="wy.lead">Inilah yang kami tawarkan kepada orang-orang yang siap melampaui batas.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why rv"><span class="n">01</span><h4 data-i18n="wy.1h">Tumbuh bersama perusahaan yang ambisius</h4><p data-i18n="wy.1p">Visi kami jelas: menjadi Super Brand Lifestyle Aksesoris No. 1 di Indonesia pada 2030. Pekerjaanmu ikut menentukan apakah kita sampai di sana.</p></div>
+      <div class="why rv d1"><span class="n">02</span><h4 data-i18n="wy.2h">Belajar setiap hari</h4><p data-i18n="wy.2p">Training karyawan yang rutin, outbound untuk pengembangan karakter, dan pemimpin yang terus belajar bersama tim.</p></div>
+      <div class="why rv d2"><span class="n">03</span><h4 data-i18n="wy.3h">Ruang untuk naik level</h4><p data-i18n="wy.3p">Mengangkat setiap insan agar bertumbuh ke jenjang yang lebih tinggi adalah bagian dari misi perusahaan — bukan sekadar janji.</p></div>
+      <div class="why rv"><span class="n">04</span><h4 data-i18n="wy.4h">Kerja keras yang dihargai</h4><p data-i18n="wy.4p">Reward trip ke Bali dan Bromo–Batu untuk tim terbaik, hingga reward Umroh untuk karyawan di 2026.</p></div>
+      <div class="why rv d1"><span class="n">05</span><h4 data-i18n="wy.5h">Kerja yang bermakna</h4><p data-i18n="wy.5p">Bekerja sebagai ibadah, dalam perusahaan yang aktif berbagi — dari donasi bencana hingga pembangunan toilet untuk karyawan.</p></div>
+      <div class="why rv d2"><span class="n">06</span><h4 data-i18n="wy.6h">Kebersamaan yang hangat</h4><p data-i18n="wy.6p">Outbound tahunan, perayaan anniversary, dan tim yang saling mendukung. Di SISTA, kita menang bersama.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. TEAM --></section>
+
+<!-- 8. TEAM -->
+<section class="sec team" id="tim">
+  <div class="wrap">
+    <div class="ceo">
+      <div class="ceo-photo rv"><span class="tag">CEO &amp; FOUNDER</span><img src="img/ceo.jpg" alt="Andri Hakim, CEO dan Founder SISTA Group"></div>
+      <div class="rv d1">
+        <span class="eyebrow" data-i18n="tm.eye">Temui Tim Kami</span>
+        <blockquote style="margin-top:22px" data-i18n="tm.q">"Mari memulai perjalanan sukses <em>bersama dengan SISTA.</em>"</blockquote>
+        <div class="who"><b>Andri Hakim</b><span class="muted">CEO &amp; Founder, SISTA Group</span></div>
+        <div class="facts">
+          <span data-i18n="tm.f1">20+ tahun di distribusi &amp; retail</span>
+          <span data-i18n="tm.f3">Visioner Super Brand No. 1 Indonesia 2030</span>
+        </div>
+      </div>
+    </div>
+    <div class="leaders">
+      <div class="leader rv"><span class="av">01</span><div><b data-i18n="tf.1">Sales</b><span class="role" data-i18n="tf.1p">Membina ribuan mitra retail</span></div></div>
+      <div class="leader rv d1"><span class="av">02</span><div><b data-i18n="tf.2">Marketing</b><span class="role" data-i18n="tf.2p">Brand, digital &amp; kampanye</span></div></div>
+      <div class="leader rv d2"><span class="av">03</span><div><b data-i18n="tf.3">Supply Chain</b><span class="role" data-i18n="tf.3p">Impor, gudang &amp; pengiriman</span></div></div>
+      <div class="leader rv d3"><span class="av">04</span><div><b data-i18n="tf.4">Toko &amp; Layanan</b><span class="role" data-i18n="tf.4p">Service excellence di toko Solo &amp; Surabaya</span></div></div>
+      <div class="leader rv"><span class="av">05</span><div><b data-i18n="tf.5">Human Resources</b><span class="role" data-i18n="tf.5p">Budaya, rekrutmen &amp; pengembangan</span></div></div>
+      <div class="leader rv d1"><span class="av">06</span><div><b data-i18n="tf.6">Accounting &amp; Finance</b><span class="role" data-i18n="tf.6p">Laporan yang akurat 100%</span></div></div>
+      <div class="leader rv d2"><span class="av">07</span><div><b data-i18n="tf.7">Brand &amp; Produk</b><span class="role" data-i18n="tf.7p">Hanami, Estella, Twinkle, Annabelle's</span></div></div>
+      <div class="join-card rv d3"><b data-i18n="tm.join">Kursi berikutnya bisa jadi milikmu.</b><a href="#lowongan"><span data-i18n="cta.seeJobs">Lihat Lowongan</span> →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. JOBS --></section>
+
+<!-- 9. JOBS -->
+<section class="sec" id="lowongan">
+  <div class="wrap">
+    <div class="sec-head split">
+      <div class="rv">
+        <span class="eyebrow" data-i18n="jb.eye">Peluang Karier</span>
+        <h2 class="h-l" style="margin-top:16px" data-i18n="jb.h">Temukan peranmu <span class="it">dalam perjalanan ini.</span></h2>
+      </div>
+      <p class="lead rv d1" data-i18n="jb.lead">SISTA terus bertumbuh, dan kami membutuhkan orang-orang terbaik di setiap lini. Klik posisi untuk melihat deskripsinya, lalu lamar dalam dua menit.</p>
+    </div>
+    <div class="jobs-bar" id="jobFilters">
+      <label class="job-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" id="jobQ" placeholder="Cari posisi…" data-i18n-ph="jb.search" aria-label="Cari posisi"></label>
+    </div>
+    <div class="job-list" id="jobList"></div>
+    <p class="empty" id="jobEmpty" data-i18n="jb.empty">Belum ada posisi yang cocok. Coba filter lain, atau kirim lamaran terbuka.</p>
+    <div class="jobs-note rv">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E1251B" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v5M12 16h.01"/></svg>
+      <div data-i18n="jb.note"><b>Tidak menemukan posisi yang pas?</b> Kirim lamaran terbuka — kami selalu mencari talenta muda dan profesional dengan sikap baik dan semangat belajar. Proses rekrutmen SISTA tidak memungut biaya apa pun.</div>
+    </div>
+    <div style="margin-top:20px"><button class="btn btn-ink" data-apply="open" type="button"><span data-i18n="jb.open">Kirim Lamaran Terbuka</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+    <div class="ask rv">
+      <div><span class="eyebrow" data-i18n="ask.eye">Ada pertanyaan?</span><h3 class="h-m" style="margin-top:10px" data-i18n="ask.h">Tanya seputar lowongan &amp; karier di SISTA.</h3><p class="muted" style="margin-top:6px" data-i18n="ask.p">Hubungi tim HR kami langsung, atau ikuti keseharian tim SISTA di Instagram.</p></div>
+      <div class="ask-btns">
+        <a class="ask-btn wa" href="https://wa.me/628985414313?text=Halo%20Tim%20HR%20SISTA%20Group%2C%20saya%20ingin%20bertanya%20tentang%20lowongan%20dan%20karier%20di%20SISTA." rel="noopener" data-wa-q><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.6-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg><span><small>WhatsApp HR</small><b>+62 898-5414-313</b></span></a>
+        <a class="ask-btn ig" href="https://www.instagram.com/lifeatsista/" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><span><small>Instagram</small><b>@lifeatsista</b></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. CTA -->
+<section class="cta">
+  <svg class="cta-ring" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="96" fill="none" stroke="#fff" stroke-width="6"/><text x="100" y="138" text-anchor="middle" font-family="Instrument Serif,serif" font-style="italic" font-size="130" fill="#fff">S</text></svg>
+  <div class="wrap" style="position:relative">
+    <span class="eyebrow" style="color:#fff" data-i18n="ct.eye">Bergabunglah</span>
+    <h2 class="h-xl" style="margin-top:22px"><span data-i18n="ct.h">Siap melampaui batas?</span><em data-i18n="ct.s">Masa depanmu dimulai dari satu langkah.</em></h2>
+    <div class="row">
+      <button class="btn btn-white" data-apply="open" type="button"><span data-i18n="cta.apply">Lamar Sekarang</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <a href="#lowongan" class="btn btn-ghost" data-i18n="cta.seeJobs">Lihat Lowongan</a>
+      <a href="https://wa.me/628985414313?text=Halo%20Tim%20HR%20SISTA%20Group%2C%20saya%20ingin%20bertanya%20tentang%20lowongan%20dan%20karier%20di%20SISTA." class="btn btn-ghost" rel="noopener" data-wa-q><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.6-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg><span data-i18n="ask.cta">Tanya via WhatsApp</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a href="#top" class="brand"><img src="img/logo.png" alt="" width="36" height="36"><span>SISTA Group</span></a>
+        <p style="margin-top:16px;max-width:36ch" data-i18n="ft.about">Importir &amp; brand aksesoris lifestyle wanita. Tumbuh bersama UMKM Indonesia sejak 2020, berakar dari bisnis keluarga sejak 1979.</p>
+      </div>
+      <div><h6 data-i18n="ft.loc">Lokasi</h6><ul><li><b style="color:#fff">Sista Aksesoris Solo</b><br>Jl. Yos Sudarso No. 26, Solo</li><li><b style="color:#fff">Sista Surabaya</b><br>Jl. Kapasan 172, Surabaya</li></ul></div>
+      <div><h6 data-i18n="ft.ex">Jelajahi</h6><ul><li><a href="#tentang" data-i18n="nav.about">Tentang</a></li><li><a href="#budaya" data-i18n="nav.culture">Budaya</a></li><li><a href="#bertumbuh" data-i18n="nav.growth">Bertumbuh</a></li><li><a href="#lowongan" data-i18n="nav.jobs">Lowongan</a></li></ul></div>
+      <div><h6 data-i18n="ft.fo">Ikuti kami</h6><ul><li><a href="https://www.instagram.com/lifeatsista/" rel="noopener"><b style="color:#fff">@lifeatsista</b></a> <span data-i18n="ft.ig">— info karier</span></li><li><a href="https://wa.me/628985414313" rel="noopener">WhatsApp HR +62 898-5414-313</a></li><li><a href="https://www.instagram.com/sistagrosir.id/" rel="noopener">Instagram @sistagrosir.id</a></li><li><a href="https://sistaaksesoris.com" rel="noopener">sistaaksesoris.com</a></li><li><a href="https://sistagrosir.id" rel="noopener">sistagrosir.id</a></li><li>TikTok @grosiraksesoriswanita</li></ul></div>
+    </div>
+    <div class="foot-b"><span>© <span id="yr">2026</span> SISTA Group</span><span data-i18n="ft.fraud">SISTA tidak pernah memungut biaya dalam proses rekrutmen.</span></div>
+  </div>
+</footer>
+
+<a href="#lowongan" class="btn btn-red fab" id="fab" data-i18n="cta.apply">Lamar Sekarang</a>
+
+<!-- APPLY MODAL -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="sheet">
+    <div class="sheet-h">
+      <div><span class="eyebrow" data-i18n="fm.eye">Formulir Lamaran</span><h3 id="mTitle" style="margin-top:10px" data-i18n="fm.h">Ayo mulai perjalananmu.</h3></div>
+      <button class="x" id="mClose" aria-label="Tutup"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <form class="form" id="applyForm" novalidate>
+      <div class="field full"><label for="fPos" data-i18n="fm.pos">Posisi yang dilamar</label><select id="fPos" required></select></div>
+      <div class="field"><label for="fName" data-i18n="fm.name">Nama lengkap</label><input id="fName" autocomplete="name" required><span class="err" data-i18n="fm.req">Wajib diisi</span></div>
+      <div class="field"><label for="fWa" data-i18n="fm.wa">No. WhatsApp</label><input id="fWa" type="tel" inputmode="tel" autocomplete="tel" placeholder="08xx" required><span class="err" data-i18n="fm.waErr">Masukkan nomor yang valid</span></div>
+      <div class="field"><label for="fMail">Email</label><input id="fMail" type="email" autocomplete="email" required><span class="err" data-i18n="fm.mailErr">Masukkan email yang valid</span></div>
+      <div class="field"><label for="fCity" data-i18n="fm.city">Domisili</label><input id="fCity" autocomplete="address-level2" required><span class="err" data-i18n="fm.req">Wajib diisi</span></div>
+      <div class="field full"><label for="fLink" data-i18n="fm.link">Link CV / LinkedIn / Portofolio</label><input id="fLink" type="url" placeholder="https://"></div>
+      <div class="field full"><label for="fMsg" data-i18n="fm.msg">Kenapa kamu ingin bertumbuh bersama SISTA?</label><textarea id="fMsg"></textarea></div>
+      <label class="consent full"><input type="checkbox" id="fOk" required><span data-i18n="fm.ok">Saya menyetujui data ini digunakan untuk proses rekrutmen SISTA Group.</span></label>
+      <div class="full" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px"><button class="btn btn-red" type="submit"><span data-i18n="fm.submit">Lanjutkan</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+    </form>
+    <div class="done" id="done">
+      <div class="ok"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m5 12 5 5 9-10"/></svg></div>
+      <h3 class="h-m" data-i18n="fm.doneH">Satu langkah lagi!</h3>
+      <p class="muted" style="margin-top:8px" data-i18n="fm.doneP">Kirim lamaranmu ke tim HR SISTA lewat WhatsApp. Pesan di bawah sudah kami siapkan, kamu tinggal menekan tombol kirim.</p>
+      <pre id="doneMsg"></pre>
+      <p class="muted" style="font-size:13px;margin-bottom:14px"><span data-i18n="fm.hr">WhatsApp HR SISTA:</span> <b id="hrNum"></b></p>
+      <div class="row">
+        <a class="btn btn-red" id="waLink" href="#" rel="noopener"><span data-i18n="fm.wa2">Kirim via WhatsApp</span></a>
+        <button class="btn btn-ghost" type="button" id="copyMsg" data-i18n="fm.copy">Salin pesan</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ============ CONFIG — ganti sesuai kontak HR ============ */
+const CONFIG = {
+  hrWhatsApp: "628985414313",      // format internasional tanpa "+"
+  hrWhatsAppDisplay: "+62 898-5414-313"
+};
+
+/* ============ DATA: SMILECO ============ */
+const SMILE = [
+ {k:"S",name:"Spirituality",
+  id:{t:"Kerja adalah ibadah.",d:"Menjalankan profesi dengan rasa syukur, etika moral yang tinggi, dan landasan keimanan yang kuat.",items:[["Sembahyang","Ibadah rutin & konsisten"],["Silaturahmi","Menjaga hubungan baik dengan sesama"],["Sedekah & Syukur","Memberi dengan ikhlas, mensyukuri setiap rezeki"],["Sabar & Sungguh-sungguh","Tabah dalam proses, bekerja sepenuh hati"]]},
+  en:{t:"Work is worship.",d:"We do our work with gratitude, high moral standards and a strong foundation of faith.",items:[["Prayer","Consistent, regular worship"],["Connection","Keeping good relationships with others"],["Giving & gratitude","Giving sincerely, grateful for every blessing"],["Patience & dedication","Steady through the process, working wholeheartedly"]]}},
+ {k:"M",name:"Mentality",
+  id:{t:"Growth mindset, pantang menyerah.",d:"Kemampuan bisa dikembangkan dengan usaha dan belajar. Tantangan adalah peluang untuk bertumbuh.",items:[["Growth mindset","Tantangan adalah peluang bertumbuh"],["Pantang menyerah","Kegagalan adalah feedback berharga"],["Positif & optimis","Lihat solusi, bukan masalah"],["\"Saya bisa\"","Filter optimis menentukan masa depan"]]},
+  en:{t:"Growth mindset, never give up.",d:"Ability grows through effort and learning. Every challenge is a chance to grow.",items:[["Growth mindset","Challenges are chances to grow"],["Never give up","Failure is valuable feedback"],["Positive & optimistic","See solutions, not problems"],["\"I can\"","An optimistic filter shapes the future"]]}},
+ {k:"I",name:"Integrity",
+  id:{t:"Benar, bahkan saat tidak ada yang melihat.",d:"Jujur dalam setiap tindakan — dari kasir dan laporan keuangan hingga interaksi dengan rekan kerja dan pelanggan.",items:[["Akurat 100%","Tidak ada selisih, tidak ada manipulasi"],["Dokumen yang jujur","Zero toleransi nota fiktif"],["Tepat waktu","Menepati janji dan deadline"],["Legal & resmi","Impor resmi, faktur pajak, label yang lengkap"]]},
+  en:{t:"Doing right, even when no one is watching.",d:"Honest in every action, from the cash register and financial reports to how we treat colleagues and customers.",items:[["100% accurate","No discrepancies, no manipulation"],["Honest documents","Zero tolerance for fake receipts"],["On time","Keeping promises and deadlines"],["Legal & official","Licensed imports, tax invoices, complete labelling"]]}},
+ {k:"L",name:"Loyalty",
+  id:{t:"Komitmen penuh, extra miles.",d:"Setia pada visi perusahaan dan tim — mau bekerja lebih dari yang diminta dan menjadi duta SISTA di kehidupan sehari-hari.",items:[["Komitmen penuh","Setia pada visi, tidak mudah goyah saat ada tantangan"],["Extra miles","Melakukan lebih dari yang diminta"],["Brand ambassador","Menjadi wajah positif SISTA di luar kantor"],["Team first","Kesuksesan tim di atas ego pribadi"]]},
+  en:{t:"Full commitment, extra miles.",d:"Loyal to the company's vision and the team, willing to go beyond what's asked and to be a SISTA ambassador in daily life.",items:[["Full commitment","True to the vision, steady when challenges or other offers come"],["Extra miles","Doing more than what's asked"],["Brand ambassador","Being a positive face of SISTA outside the office"],["Team first","Team success over personal ego"]]}},
+ {k:"E",name:"Empathy",
+  id:{t:"Melayani dari hati.",d:"Memahami sudut pandang pelanggan, mitra, dan rekan kerja — lalu bertindak dengan tulus dan peduli.",items:[["Senyum & tulus","Menyambut setiap orang dengan senyum yang tulus"],["Dengar pelanggan","Memahami kebutuhan toko mitra di lapangan"],["Saling support","Keberhasilan satu orang adalah keberhasilan tim"],["Peduli sesama","Bisnis harus memberi manfaat bagi banyak orang"]]},
+  en:{t:"Serving from the heart.",d:"Understanding the view of customers, partners and colleagues, then acting with sincerity and care.",items:[["Smile & sincerity","Greeting everyone with a genuine smile"],["Listen to customers","Understanding partner stores on the ground"],["Support each other","One person's success is the team's success"],["Care for others","Business should benefit many people"]]}},
+ {k:"C",name:"Continuous Improvement",
+  id:{t:"Bukan hanya mengerjakan pekerjaan — tapi memperbaikinya.",d:"Setiap hari sedikit lebih baik. Kaizen dan PDCA di setiap divisi, dengan ide perbaikan dari siapa saja.",items:[["Kaizen / PDCA","Perbaikan berkelanjutan di setiap divisi"],["Tidak cepat puas","Selalu mencari cara yang lebih baik"],["Ide dari semua orang","Siapa pun boleh mengusulkan perbaikan"],["Total Quality","Kualitas dijaga di setiap proses"]]},
+  en:{t:"Not just doing the job — improving it.",d:"A little better every day. Kaizen and PDCA in every division, with improvement ideas from anyone.",items:[["Kaizen / PDCA","Continuous improvement in every division"],["Never settle","Always looking for a better way"],["Ideas from everyone","Anyone can propose an improvement"],["Total Quality","Quality kept in every process"]]}},
+ {k:"O",name:"Ownership",
+  id:{t:"Bekerja seperti pemilik.",d:"Rasa memiliki terhadap perusahaan — berani mengambil keputusan, proaktif mencari solusi, dan bertanggung jawab penuh atas hasilnya.",items:[["Rasa memiliki","Jaga dan rawat aset perusahaan seperti milik sendiri"],["Proaktif solusi","Jadilah problem solver, bukan problem reporter"],["Ambil keputusan","Berani bertindak dalam batas wewenangmu"],["Akuntabel","Bertanggung jawab penuh atas hasil kerja, sukses maupun gagal"]]},
+  en:{t:"Work like an owner.",d:"A sense of ownership for the company: making decisions, proactively finding solutions and taking full responsibility for the results.",items:[["Sense of ownership","Treat company assets as your own"],["Proactive solutions","Be a problem solver, not a problem reporter"],["Make decisions","Act within your authority"],["Accountable","Fully responsible for your results, success or failure"]]}}
+];
+
+/* ============ DATA: JOBS ============ */
+const DEPTS = {all:{id:"Semua",en:"All"},sales:{id:"Sales",en:"Sales"},brand:{id:"Brand & Produk",en:"Brand & Product"},mkt:{id:"Layanan Pelanggan",en:"Customer Service"},store:{id:"Toko",en:"Store"},ops:{id:"Operasional",en:"Operations"},fp:{id:"Finance & HR",en:"Finance & HR"}};
+const SOLO={id:"Solo",en:"Solo"}, FT={id:"Penuh waktu",en:"Full-time"};
+const JOBS = [
+ {key:"se",dept:"sales",title:"Sales Executive B2B",loc:{id:"Solo / Surabaya",en:"Solo / Surabaya"},type:FT,
+  id:{about:"Menjadi wajah SISTA bagi pemilik toko — membantu mereka tumbuh dengan produk yang tepat dan layanan prima.",resp:["Mengunjungi dan membina toko swalayan, fashion, kosmetik, gift shop, dan ATK","Menawarkan produk dan program SISTA sesuai kebutuhan toko","Memberi saran display dan produk best-seller","Mengelola order dan memastikan pelanggan puas"],prof:["Komunikatif, ramah, dan senang bertemu orang baru","Berorientasi target dan pelayanan","Pengalaman sales B2B atau retail menjadi nilai tambah"]},
+  en:{about:"Be SISTA's face for store owners, helping them grow with the right products and excellent service.",resp:["Visit and nurture supermarkets, fashion, beauty, gift and stationery stores","Offer SISTA products and programmes that fit each store","Advise on display and best-sellers","Manage orders and keep customers happy"],prof:["Communicative, friendly and energised by meeting people","Target- and service-driven","B2B or retail sales experience is a plus"]}},
+ {key:"kam",dept:"sales",title:"Key Account Manager",loc:SOLO,type:FT,
+  id:{about:"Menjaga dan menumbuhkan hubungan dengan jaringan retail utama SISTA.",resp:["Mengelola hubungan dengan jaringan swalayan dan retail besar","Menyusun rencana penjualan untuk setiap pelanggan utama","Bernegosiasi program, termin, dan produk baru","Memastikan pengiriman dan layanan sesuai komitmen"],prof:["Pengalaman mengelola key account di retail atau FMCG","Kuat dalam negosiasi dan membangun relasi jangka panjang","Berintegritas tinggi"]},
+  en:{about:"Keep and grow SISTA's relationships with major retail chains.",resp:["Manage relationships with supermarket chains and large retailers","Plan sales for each key customer","Negotiate programmes, terms and new products","Make sure deliveries and service meet commitments"],prof:["Key-account experience in retail or FMCG","Strong negotiator who builds long-term relationships","High integrity"]}},
+ {key:"merch",dept:"brand",title:"Merchandiser / Product Development",loc:SOLO,type:FT,
+  id:{about:"Membantu memilih dan mengembangkan produk yang laris di rak mitra — termasuk untuk brand Hanami, Estella, Twinkle, dan Annabelle's.",resp:["Memantau tren aksesoris, fashion, dan kecantikan","Menyiapkan sampel dan mengembangkan produk brand milik sendiri","Menganalisis penjualan untuk memilih produk pemenang","Berkoordinasi dengan tim gudang dan supply chain"],prof:["Peka tren dan memiliki selera estetika yang baik","Nyaman bekerja dengan data penjualan","Teliti dan kolaboratif"]},
+  en:{about:"Help select and develop products that sell on partners' shelves, including for Hanami, Estella, Twinkle and Annabelle's.",resp:["Track accessory, fashion and beauty trends","Prepare samples and develop own-brand products","Analyse sales to pick winning products","Coordinate with warehouse and supply chain"],prof:["Eye for trends and good aesthetic taste","Comfortable with sales data","Detail-oriented and collaborative"]}},
+ {key:"cs",dept:"mkt",title:"Customer Service",loc:SOLO,type:FT,
+  id:{about:"Menghadirkan Service Excellence SISTA di setiap percakapan dengan pelanggan.",resp:["Melayani pertanyaan dan pesanan pelanggan lewat WhatsApp Business","Memberi informasi produk, program, dan status pengiriman","Menangani keluhan dengan cepat, akurat, dan tulus","Berkoordinasi dengan tim sales dan gudang"],prof:["Ramah, sabar, dan komunikatif","Teliti dan cepat merespons","Pengalaman customer service menjadi nilai tambah"]},
+  en:{about:"Deliver SISTA's Service Excellence in every customer conversation.",resp:["Handle customer questions and orders via WhatsApp Business","Share product, programme and delivery information","Resolve complaints quickly, accurately and sincerely","Coordinate with sales and warehouse teams"],prof:["Friendly, patient and communicative","Careful and quick to respond","Customer-service experience is a plus"]}},
+ {key:"kasir",dept:"store",title:"Kasir Toko",loc:{id:"Toko Solo / Surabaya",en:"Solo / Surabaya stores"},type:FT,
+  id:{about:"Menjadi wajah SISTA di toko — melayani pelanggan dengan senyum dan transaksi yang akurat 100%.",resp:["Melayani transaksi pembayaran dengan cepat dan akurat","Menyambut pelanggan dengan Service Excellence: senyum, cepat, akurat, tulus","Merekap kas harian tanpa selisih","Membantu menjaga kerapian toko dan display produk"],prof:["Jujur, teliti, dan berintegritas","Ramah dan senang melayani","Pengalaman sebagai kasir menjadi nilai tambah"]},
+  en:{about:"Be SISTA's face in the store, serving customers with a smile and 100% accurate transactions.",resp:["Handle payments quickly and accurately","Welcome customers with Service Excellence: smile, speed, accuracy, sincerity","Reconcile daily cash with no discrepancies","Help keep the store and product displays tidy"],prof:["Honest, careful and principled","Friendly and enjoys serving people","Cashier experience is a plus"]}},
+ {key:"buy",dept:"ops",title:"Staff Pembelian",loc:SOLO,type:FT,
+  id:{about:"Memastikan produk yang tepat tersedia di waktu yang tepat — dari supplier hingga gudang SISTA.",resp:["Memproses pesanan pembelian ke supplier","Memantau stok dan kebutuhan barang bersama tim sales dan gudang","Berkoordinasi jadwal kedatangan barang dan dokumen pembelian","Mencatat dan mengarsipkan dokumen pembelian dengan rapi"],prof:["Teliti dan berintegritas","Komunikatif dan mampu bernegosiasi","Terbiasa dengan spreadsheet"]},
+  en:{about:"Make sure the right products arrive at the right time, from suppliers to SISTA's warehouse.",resp:["Process purchase orders to suppliers","Monitor stock and needs with the sales and warehouse teams","Coordinate arrival schedules and purchasing documents","Record and file purchasing documents neatly"],prof:["Careful, with integrity","Communicative and able to negotiate","Comfortable with spreadsheets"]}},
+ {key:"wh",dept:"ops",title:"Staff Gudang & Logistik",loc:{id:"Solo (Gudang)",en:"Solo (Warehouse)"},type:FT,
+  id:{about:"Menjaga ribuan SKU tetap rapi, akurat, dan siap dikirim ke seluruh Indonesia.",resp:["Menerima dan membongkar kiriman kontainer","Menyortir, menyimpan, dan mencatat stok","Menyiapkan dan mengemas pesanan","Memastikan pengiriman tepat waktu"],prof:["Teliti, jujur, dan disiplin","Siap bekerja fisik dalam tim"]},
+  en:{about:"Keep thousands of SKUs tidy, accurate and ready to ship across Indonesia.",resp:["Receive and unload container shipments","Sort, store and record stock","Prepare and pack orders","Make sure deliveries leave on time"],prof:["Careful, honest and disciplined","Ready for physical teamwork"]}},
+ {key:"acc",dept:"fp",title:"Staff Accounting & Finance",loc:SOLO,type:FT,
+  id:{about:"Menjaga laporan keuangan SISTA tetap akurat 100% — tanpa selisih, tanpa manipulasi.",resp:["Mencatat transaksi dan menyusun laporan keuangan","Mengelola faktur dan dokumen pajak","Melakukan rekonsiliasi dan penagihan","Mendukung tim dalam analisis keuangan"],prof:["Latar belakang akuntansi atau keuangan","Teliti dan berintegritas tinggi","Terbiasa dengan spreadsheet dan software akuntansi"]},
+  en:{about:"Keep SISTA's financial reports 100% accurate, with no discrepancies and no manipulation.",resp:["Record transactions and prepare financial reports","Manage invoices and tax documents","Handle reconciliation and collections","Support the team with financial analysis"],prof:["Accounting or finance background","Careful, with high integrity","Comfortable with spreadsheets and accounting software"]}},
+ {key:"hr",dept:"fp",title:"HR Officer",loc:SOLO,type:FT,
+  id:{about:"Membantu menemukan, mengembangkan, dan menjaga orang-orang terbaik SISTA.",resp:["Menjalankan proses rekrutmen dari awal hingga akhir","Menyelenggarakan onboarding budaya bagi karyawan baru","Mengelola program training dan kegiatan karyawan","Mengurus administrasi kepegawaian"],prof:["Pengalaman di bidang HR","Komunikatif dan peduli pada pengembangan orang","Rapi dalam administrasi"]},
+  en:{about:"Help find, develop and keep SISTA's best people.",resp:["Run recruitment end to end","Deliver culture onboarding for new hires","Organise training and employee activities","Handle HR administration"],prof:["HR experience","Communicative and cares about developing people","Organised with administration"]}}
+];
+
+/* ============ I18N (EN; ID diambil dari HTML) ============ */
+const EN = {
+"nav.careers":"Careers","nav.about":"About","nav.brands":"Brands","nav.culture":"Culture","nav.life":"Life at SISTA","nav.growth":"Growth","nav.why":"Why SISTA","nav.team":"Team","nav.jobs":"Jobs",
+"cta.apply":"Apply Now","cta.seeJobs":"See Open Roles","cta.meet":"Meet SISTA",
+"hero.pill":"We're hiring","hero.pill2":"Solo · Surabaya · Across Indonesia","hero.sub":"Build your future with SISTA.","hero.lead":"From a small shop in Solo in 1979 to serving thousands of retail partners across Indonesia, and we're only getting started. We're looking for people who want to grow, lead and build something meaningful.","hero.badge":"Super Brand No.1","hero.cap1":"Outbound & Picnic 2026 · Drini Park","hero.cap2":"Employee training","hero.cap3":"One team, one family",
+"about.eye":"About SISTA","about.h":"We're not just building a business — <em>we're building a legacy.</em>","about.p1":"SISTA Group is an importer and distributor of women's lifestyle accessories based in Solo. We import directly from trusted overseas factories and supply supermarkets, fashion stores, beauty shops, gift shops and stationery stores across Indonesia, with licensed imports and official tax invoices.","about.p2":"Beyond importing, we build our own brands (Hanami, Estella, Twinkle and Annabelle's) and run our own stores, distribution warehouse and delivery fleet. What sets us apart isn't just price but <b>excellent service</b> and a commitment to growing together with our partners.",
+"stat.1":"people on the SISTA team","stat.2":"stores in Solo & Surabaya","stat.6":"family business roots in Solo",
+"tl.eye":"Our Journey","tl.h":"From a corner shop <span class=\"it\">to a big dream.</span>","tl.1h":"The first seed","tl.1p":"Arief Hakim opens a small grocery shop in Solo, the start of the SISTA family journey.","tl.2h":"Building distribution","tl.2p":"Andri Hakim joins Bunga Mas and builds the distribution business with the family.","tl.3h":"Going modern","tl.3p":"First computerisation: records go digital, and operations become more structured through 2011.","tl.4h":"A turning point","tl.4p":"All debt paid off, a strong foundation for future expansion.","tl.5h":"SISTA is born","tl.5p":"Official imports begin. SISTA launches as a first-hand importer of women's accessories.","tl.6h":"SISTA Group founded","tl.6p":"A new office and the first distribution warehouse are fully operational.","tl.7h":"A mindset shift","tl.7p":"The digital era begins, with online training kicking off the team's mindset shift.","tl.8h":"Growing as a team","tl.8p":"Employee training, outbounds and reward trips for top teams, leading to the Total Quality Movement in 2025.","tl.9h":"Gratitude & giving","tl.9p":"An Umrah reward for employees, an outbound at Drini Park and CSR for the SISTA family.","tl.10h":"Our goal","tl.10p":"Indonesia's No. 1 Lifestyle Accessories Super Brand. And you can be part of the journey.",
+"vm.v":"Vision","vm.vh":"To become Indonesia's No. 1 Lifestyle Accessories Super Brand.","vm.m":"Mission","vm.m1":"To be a company grounded in spiritual values, shaping every employee into a person of faith and devotion.","vm.m2":"To partner with as many customers as possible to create new jobs and reduce unemployment in Indonesia.","vm.m3":"To raise the dignity of everyone in the company so they keep growing and levelling up into skilled experts in their field.","vm.m4":"To contribute to the nation through social missions and efforts to reduce poverty in Indonesia.","vm.p":"Business Purpose","vm.ph":"Supporting small businesses (UMKM) to <em>grow together</em> in lifestyle accessories by building comfort, collaboration and mutually beneficial relationships.",
+"br.eye":"Our Brands","br.h":"Four brands, <span class=\"it\">one standard.</span>","br.lead":"Each brand is designed for a different market segment, while holding SISTA's core values of quality, aesthetics and consistency. Our own brands express our sharp eye for trends, and they are an important part of our journey toward the 2030 vision.","br.hanami":"Premium hair accessories for customers who want quality in every detail.","br.estella":"On-trend fashion accessories: clips, headbands and everyday style pieces.","br.twinkle":"Cute keychains full of character, a favourite on our partners' shelves.","br.annabelle":"A lifestyle collection of bags and pouches for everyday life.","cat.1":"Hair accessories","cat.2":"Makeup & beauty","cat.3":"Mirrors & combs","cat.4":"Bottles & tumblers","cat.5":"Keychains","cat.6":"Bags & pouches","cat.7":"Stationery","so.eye":"Our Stores","so.h":"9 stores, <span class=\"it\">one SISTA family.</span>","so.j1":"Join","so.j2":"Our store team →","so.j3":"See Store Cashier openings","so.p":"Our stores are where the SISTA team delivers Service Excellence every day, and they double as showrooms for our business partners.",
+"cu.eye":"Our Culture · SMILECO","cu.h":"Culture isn't a slogan on the wall. <span class=\"it\">It's our DNA.</span>","cu.lead":"Culture is a company's personality: what we do when no one is watching. From the CEO to the warehouse team, everyone is a guardian of SISTA culture. Pick a letter to explore it.",
+"mi.eye":"Mindset","mi.h":"Your thoughts, <em>your future.</em>","mi.c1":"THOUGHTS","mi.c2":"WORDS","mi.c3":"ACTIONS","mi.c4":"HABITS","mi.c5":"CHARACTER","mi.c6":"FUTURE","mi.eye2":"Mental attitude: a daily choice","mi.n1":"\"I can't\"","mi.p1":"\"I can\"","mi.n2":"Stuck on problems","mi.p2":"Focused on solutions","mi.n3":"Looking for others' faults","mi.p3":"Looking for others' good","mi.n4":"Seeing limits","mi.p4":"Seeing possibilities",
+"li.eye":"Life at SISTA","li.h":"Work hard, <span class=\"it\">grow together.</span>","li.lead":"From unloading containers at the warehouse to serving customers in our stores, from training sessions to our yearly outbound, this is what our days look like.","li.c1":"Create Winner Mentality","li.c1s":"Company-wide training","li.c2":"Outbound · Character Development","li.q":"\"Business success should benefit many people.\"","li.c4":"Unloading containers","li.c4s":"Imported direct from factories","li.c5":"Solo distribution warehouse","li.c5s":"Thousands of SKUs ready to ship","li.c7":"Store display","li.c7s":"A showroom for B2B partners","li.c8":"Curated details","li.c8s":"Products picked with a sharp eye for trends",
+"tg2.t1":"Togetherness","tg2.h1":"Outbound & Picnic 2026 · Drini Park","tg2.p1":"A full day of laughter with the whole SISTA family. Good vibes only.","tg2.t2":"Spirituality","tg2.h2":"Islamic study & iftar together","tg2.p2":"Strengthening faith and bonds with colleagues.","tg2.t3":"Spirituality","tg2.h3":"Christian fellowship","tg2.p3":"Space for every employee to grow in their own faith.","ev.1":"Outbound at Umbul Sidomukti","ev.3":"Bali reward trip for top teams","ev.4":"3rd anniversary","ev.5":"Tubing outbound in Klaten","ev.6":"Bromo–Batu reward trip","ev.7":"4th anniversary","ev.9":"Strengthening culture & systems","ev.10":"Total Quality Movement","ev.11":"5th anniversary","ev.12":"Rafting outbound on the Elo River","ev.13":"CSR: donation for disaster victims in North Sumatra & Aceh Tamiang via PMI",
+"gr.eye":"Growth & Careers","gr.h":"Here, you <span class=\"it\">level up.</span>","gr.lead":"Our mission is to raise the dignity of everyone in the company, so they keep moving forward, growing and levelling up into skilled experts in their field.",
+"st.eye":"Who we're looking for","st.h":"WE'RE<br>LOOKING FOR <span>STARS.</span>","st.p":"At SISTA, attitude matters as much as performance. A positive attitude plus strong performance is the future of this company. And if your attitude is right, we'll help you build the skills.","st.s1":"GOOD attitude · GOOD performance","st.n1":"Star","st.d1":"This is who SISTA is looking for. You are the future of this company.","st.s2":"GOOD attitude · Growing performance","st.n2":"Potential","st.d2":"Your attitude is right, so now build your skills. There's plenty of room to grow.",
+"pa.eye":"Your Growth Path","pa.h":"From day one <span class=\"it\">to leading.</span>","pa.1h":"Culture onboarding","pa.1p":"A new-hire programme covering our history, company profile and SMILE CO culture.","pa.2h":"Employee training","pa.2p":"Training such as Create Winner Mentality, character-building outbounds and the Total Quality Movement.","pa.3h":"Attitude + performance","pa.3p":"You're assessed on attitude and performance, the two things that set ordinary employees apart from extraordinary ones.","pa.4h":"Level up","pa.4p":"Grow into higher roles and become an expert in your field as SISTA grows.","pa.5h":"Recognised","pa.5p":"Top teams have earned reward trips to Bali and Bromo–Batu, and in 2026 an Umrah reward.",
+"wy.eye":"Why SISTA","wy.h":"Not just a place to work. <span class=\"it\">A place to grow.</span>","wy.lead":"Here's what we offer people who are ready to go beyond their limits.","wy.1h":"Grow with an ambitious company","wy.1p":"Our vision is clear: to become Indonesia's No. 1 Lifestyle Accessories Super Brand by 2030. Your work helps decide whether we get there.","wy.2h":"Learn every day","wy.2p":"Regular employee training, character-building outbounds and leaders who keep learning alongside the team.","wy.3h":"Room to level up","wy.3p":"Helping everyone grow into higher roles is part of the company's mission, not just a promise.","wy.4h":"Hard work is rewarded","wy.4p":"Reward trips to Bali and Bromo–Batu for top teams, and an Umrah reward for employees in 2026.","wy.5h":"Meaningful work","wy.5p":"Work as worship, in a company that actively gives back, from disaster relief to building a toilet for an employee.","wy.6h":"A warm, close team","wy.6p":"Yearly outbounds, anniversary celebrations and a team that supports each other. At SISTA, we win together.",
+"tf.1":"Sales","tf.1p":"Serving thousands of retail partners","tf.2":"Marketing","tf.2p":"Brand, digital & campaigns","tf.3":"Supply Chain","tf.3p":"Imports, warehouse & delivery","tf.4":"Stores & Service","tf.4p":"Service excellence in Solo & Surabaya","tf.5":"Human Resources","tf.5p":"Culture, recruitment & development","tf.6":"Accounting & Finance","tf.6p":"100% accurate reporting","tf.7":"Brand & Product","tf.7p":"Hanami, Estella, Twinkle, Annabelle's",
+"gv.t1":"Employee recognition","gv.h1":"Umrah Reward 2026","gv.p1":"Work is worship. As an expression of gratitude, SISTA sends employees on the Umrah pilgrimage.","gv.t2":"CSR · Caring for others","gv.h2":"Building a toilet for an employee","gv.p2":"\"Business success should benefit many people.\" SISTA's CSR support built a toilet at an employee's home.","ev.14":"Umrah reward for employees","ev.15":"CSR: building a toilet for an employee","ev.16":"Outbound at Drini Park",
+"tm.eye":"Meet Our Team","tm.q":"\"Let's start a journey to success <em>together with SISTA.</em>\"","tm.f1":"20+ years in distribution & retail","tm.f3":"Visionary behind Indonesia's No. 1 Super Brand 2030","tm.join":"The next seat could be yours.",
+"jb.eye":"Career Opportunities","jb.h":"Find your role <span class=\"it\">in this journey.</span>","jb.lead":"SISTA keeps growing, and we need the best people in every function. Click a role to see its description, then apply in two minutes.","jb.search":"Search roles…","jb.empty":"No matching roles yet. Try another filter, or send an open application.","jb.note":"<b>Can't find the right role?</b> Send an open application. We're always looking for young talent and professionals with a good attitude and a drive to learn. SISTA never charges any fee during recruitment.","jb.open":"Send an Open Application",
+"ask.eye":"Questions?","ask.h":"Ask about openings & careers at SISTA.","ask.p":"Contact our HR team directly, or follow the SISTA team's daily life on Instagram.","ask.cta":"Ask on WhatsApp","ft.ig":"— careers info","ct.eye":"Join us","ct.h":"Ready to go beyond your limits?","ct.s":"Your future starts with one step.",
+"ft.about":"Importer & brand house for women's lifestyle accessories. Growing with Indonesian small businesses since 2020, with family business roots going back to 1979.","ft.loc":"Locations","ft.ex":"Explore","ft.fo":"Follow us","ft.fraud":"SISTA never charges any fee during recruitment.",
+"fm.eye":"Application Form","fm.h":"Let's start your journey.","fm.pos":"Role you're applying for","fm.name":"Full name","fm.wa":"WhatsApp number","fm.city":"City of residence","fm.link":"CV / LinkedIn / Portfolio link","fm.msg":"Why do you want to grow with SISTA?","fm.ok":"I agree that this data may be used for SISTA Group's recruitment process.","fm.submit":"Continue","fm.req":"Required","fm.waErr":"Enter a valid number","fm.mailErr":"Enter a valid email","fm.doneH":"One more step!","fm.doneP":"Send your application to the SISTA HR team via WhatsApp. We've prepared the message below, just press send.","fm.hr":"SISTA HR WhatsApp:","fm.wa2":"Send via WhatsApp","fm.copy":"Copy message"
+};
+const UI = {
+ id:{resp:"Yang akan kamu lakukan",prof:"Profil yang kami cari",loc:"Lokasi",type:"Tipe",dept:"Divisi",apply:"Lamar posisi ini",open:"Lamaran terbuka",copied:"Pesan disalin",copyFail:"Tidak bisa menyalin — silakan salin manual",ph:"Cari posisi…",prev:"Sebelumnya",next:"Berikutnya"},
+ en:{resp:"What you'll do",prof:"Who we're looking for",loc:"Location",type:"Type",dept:"Team",apply:"Apply for this role",open:"Open application",copied:"Message copied",copyFail:"Couldn't copy — please copy it manually",ph:"Search roles…",prev:"Previous",next:"Next"}
+};
+
+let LANG = "id";
+const $ = (s,el=document)=>el.querySelector(s);
+const $$ = (s,el=document)=>[...el.querySelectorAll(s)];
+const ID = {};
+$$("[data-i18n]").forEach(el=>{ID[el.dataset.i18n]=el.innerHTML});
+
+function setLang(l){
+  LANG=l; document.documentElement.lang=l;
+  $$("[data-i18n]").forEach(el=>{const k=el.dataset.i18n; const v = l==="en"?EN[k]:ID[k]; if(v!=null) el.innerHTML=v;});
+  $("#jobQ").placeholder=UI[l].ph;
+  $$(".lang button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.lang===l));
+  $("#tlPrev").setAttribute("aria-label",UI[l].prev); $("#tlNext").setAttribute("aria-label",UI[l].next);
+  $$("[data-wa-q]").forEach(a=>a.href="https://wa.me/"+CONFIG.hrWhatsApp+"?text="+(l==="en"?"Hello%20SISTA%20Group%20HR%20team%2C%20I%27d%20like%20to%20ask%20about%20openings%20and%20careers%20at%20SISTA.":"Halo%20Tim%20HR%20SISTA%20Group%2C%20saya%20ingin%20bertanya%20tentang%20lowongan%20dan%20karier%20di%20SISTA."));
+  renderSmile(curSmile,false); renderFilters(); renderJobs(); fillPositions();
+  try{localStorage.setItem("sista-lang",l)}catch(e){}
+}
+$$(".lang button").forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.lang)));
+
+/* NAV */
+const nav=$("#nav");
+const onScroll=()=>{nav.classList.toggle("solid",scrollY>20); $("#fab").classList.toggle("on",scrollY>window.innerHeight*.9 && !nearJobs())};
+function nearJobs(){const r=$("#lowongan").getBoundingClientRect();return r.top<innerHeight && r.bottom>0}
+addEventListener("scroll",onScroll,{passive:true}); onScroll();
+const burger=$("#burger");
+function menu(open){document.body.classList.toggle("menu-open",open);burger.setAttribute("aria-expanded",open);$("#mmenu").setAttribute("aria-hidden",!open);document.body.style.overflow=open?"hidden":""}
+burger.addEventListener("click",()=>menu(!document.body.classList.contains("menu-open")));
+$$("#mmenu a").forEach(a=>a.addEventListener("click",()=>menu(false)));
+const secs=["tentang","brand","budaya","life","bertumbuh","tim","lowongan"].map(id=>document.getElementById(id));
+const navIO=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){$$(".nav-links a").forEach(a=>a.classList.toggle("active",a.getAttribute("href")==="#"+e.target.id))}})},{rootMargin:"-45% 0px -50% 0px"});
+secs.forEach(s=>navIO.observe(s));
+
+/* REVEAL */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12,rootMargin:"0px 0px -40px 0px"});
+$$(".rv").forEach(el=>io.observe(el));
+
+/* TIMELINE */
+const tl=$("#tlTrack");
+$("#tlNext").onclick=()=>tl.scrollBy({left:316,behavior:"smooth"});
+$("#tlPrev").onclick=()=>tl.scrollBy({left:-316,behavior:"smooth"});
+
+/* SMILECO */
+let curSmile=0;
+const sw=$("#smileWord");
+SMILE.forEach((s,i)=>{const b=document.createElement("button");b.type="button";b.role="tab";b.textContent=s.k;b.dataset.name=s.name;b.setAttribute("aria-label",s.name);b.addEventListener("click",()=>renderSmile(i,true));b.addEventListener("mouseenter",()=>{if(matchMedia("(hover:hover)").matches)renderSmile(i,true)});sw.appendChild(b)});
+function renderSmile(i,anim){
+  curSmile=i; const s=SMILE[i], t=s[LANG];
+  $$("button",sw).forEach((b,j)=>b.setAttribute("aria-selected",j===i));
+  const p=$("#smilePanel");
+  p.innerHTML=`<div><h3>${s.name}<em>${t.t}</em></h3></div><div><p class="desc">${t.d}</p><ul>${t.items.map(x=>`<li><b>${x[0]}</b>${x[1]}</li>`).join("")}</ul></div>`;
+  if(anim){p.classList.remove("fade-swap");void p.offsetWidth;p.classList.add("fade-swap")}
+}
+renderSmile(0,false);
+
+/* JOBS */
+let dept="all", q="";
+function renderFilters(){
+  const bar=$("#jobFilters"); $$(".chip",bar).forEach(c=>c.remove());
+  const search=$(".job-search",bar);
+  Object.keys(DEPTS).forEach(k=>{const n=k==="all"?JOBS.length:JOBS.filter(j=>j.dept===k).length;const b=document.createElement("button");b.type="button";b.className="chip";b.setAttribute("aria-pressed",k===dept);b.innerHTML=`${DEPTS[k][LANG]}<span class="c">${n}</span>`;b.onclick=()=>{dept=k;renderFilters();renderJobs()};bar.insertBefore(b,search)});
+}
+const plus='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg>';
+function renderJobs(){
+  const list=$("#jobList"); const open=new Set($$(".job.open",list).map(j=>j.dataset.key));
+  const ql=q.trim().toLowerCase();
+  const items=JOBS.filter(j=>(dept==="all"||j.dept===dept)&&(!ql||(j.title+" "+j.loc[LANG]+" "+DEPTS[j.dept][LANG]+" "+j[LANG].about).toLowerCase().includes(ql)));
+  const u=UI[LANG];
+  list.innerHTML=items.map(j=>{const t=j[LANG];const o=open.has(j.key);return `<article class="job${o?" open":""}" data-key="${j.key}">
+  <button class="job-h" type="button" aria-expanded="${o}" aria-controls="jb-${j.key}"><span class="t">${j.title}<span class="mm">${DEPTS[j.dept][LANG]} · ${j.loc[LANG]}</span></span><span class="m">${DEPTS[j.dept][LANG]}</span><span class="m">${j.loc[LANG]}</span><span class="m">${j.type[LANG]}</span><span class="tog">${plus}</span></button>
+  <div class="job-b" id="jb-${j.key}"><div><div class="job-in">
+   <div><p style="font-size:16px;margin-bottom:18px">${t.about}</p><h5>${u.resp}</h5><ul>${t.resp.map(r=>`<li>${r}</li>`).join("")}</ul></div>
+   <div><h5>${u.prof}</h5><ul>${t.prof.map(r=>`<li>${r}</li>`).join("")}</ul></div>
+   <aside class="job-side"><dl><div><dt>${u.dept}</dt><dd>${DEPTS[j.dept][LANG]}</dd></div><div><dt>${u.loc}</dt><dd>${j.loc[LANG]}</dd></div><div><dt>${u.type}</dt><dd>${j.type[LANG]}</dd></div></dl><button class="btn btn-red" type="button" data-apply="${j.key}">${u.apply}</button></aside>
+  </div></div></div></article>`}).join("");
+  $("#jobEmpty").style.display=items.length?"none":"block";
+  $$(".job-h",list).forEach(h=>h.addEventListener("click",()=>{const a=h.closest(".job");const o=!a.classList.contains("open");a.classList.toggle("open",o);h.setAttribute("aria-expanded",o)}));
+}
+$("#jobQ").addEventListener("input",e=>{q=e.target.value;renderJobs()});
+renderFilters(); renderJobs();
+
+/* APPLY MODAL */
+const modal=$("#modal"), form=$("#applyForm");
+let lastFocus=null;
+function fillPositions(sel){
+  const s=$("#fPos"); const v=sel||s.value||"open";
+  s.innerHTML=JOBS.map(j=>`<option value="${j.key}">${j.title}</option>`).join("")+`<option value="open">${UI[LANG].open}</option>`;
+  s.value=v;
+}
+fillPositions();
+document.addEventListener("click",e=>{const b=e.target.closest("[data-apply]");if(!b)return;openModal(b.dataset.apply)});
+function openModal(key){
+  lastFocus=document.activeElement; fillPositions(key);
+  form.style.display=""; $("#done").style.display="none";
+  modal.classList.add("show"); document.body.style.overflow="hidden";
+  setTimeout(()=>$("#fName").focus(),60);
+}
+function closeModal(){modal.classList.remove("show");document.body.style.overflow="";if(lastFocus)lastFocus.focus()}
+$("#mClose").onclick=closeModal;
+modal.addEventListener("click",e=>{if(e.target===modal)closeModal()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){if(modal.classList.contains("show"))closeModal();else menu(false)}});
+function mark(id,bad){$("#"+id).closest(".field").classList.toggle("bad",bad);return !bad}
+form.addEventListener("submit",e=>{
+  e.preventDefault();
+  const name=$("#fName").value.trim(), wa=$("#fWa").value.trim(), mail=$("#fMail").value.trim(), city=$("#fCity").value.trim();
+  let ok=true;
+  ok&=mark("fName",!name); ok&=mark("fWa",!/^\+?[0-9\s-]{9,16}$/.test(wa)); ok&=mark("fMail",!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail)); ok&=mark("fCity",!city);
+  const cb=$("#fOk"); if(!cb.checked){cb.focus();cb.closest(".consent").style.color="var(--red)";ok=false}else cb.closest(".consent").style.color="";
+  if(!ok)return;
+  const pv=$("#fPos").value; const pos=pv==="open"?UI[LANG].open:JOBS.find(j=>j.key===pv).title;
+  const link=$("#fLink").value.trim(), msg=$("#fMsg").value.trim();
+  const L=LANG==="id";
+  const text=(L?`Halo Tim HR SISTA Group,\n\nSaya ingin melamar posisi: *${pos}*\n\nNama: ${name}\nWhatsApp: ${wa}\nEmail: ${mail}\nDomisili: ${city}`:`Hello SISTA Group HR Team,\n\nI'd like to apply for: *${pos}*\n\nName: ${name}\nWhatsApp: ${wa}\nEmail: ${mail}\nCity: ${city}`)
+    +(link?`\n${L?"CV/Portofolio":"CV/Portfolio"}: ${link}`:"")+(msg?`\n\n${msg}`:"")+(L?`\n\nTerima kasih.`:`\n\nThank you.`);
+  $("#doneMsg").textContent=text;
+  $("#hrNum").textContent=CONFIG.hrWhatsAppDisplay;
+  $("#waLink").href=`https://wa.me/${CONFIG.hrWhatsApp}?text=${encodeURIComponent(text)}`;
+  form.style.display="none"; $("#done").style.display="block";
+});
+function toast(t){const el=$("#toast");el.textContent=t;el.classList.add("show");setTimeout(()=>el.classList.remove("show"),2200)}
+$("#copyMsg").addEventListener("click",async()=>{try{await navigator.clipboard.writeText($("#doneMsg").textContent);toast(UI[LANG].copied)}catch(e){toast(UI[LANG].copyFail)}});
+
+/* INIT LANG */
+$("#yr").textContent=new Date().getFullYear();
+try{const s=localStorage.getItem("sista-lang");if(s==="en")setLang("en")}catch(e){}
+</script>
+</body>
+</html>
